@@ -68,9 +68,9 @@ couple = re.search(r'<svg[^>]*>(.*)</svg>', open(HERE + 'couple.svg', encoding='
 gift = re.search(r'<symbol id="ic-gift"[^>]*>(.*?)</symbol>', omar, re.S).group(1)
 
 # ── imágenes
-order_arco = list(range(1, 17))
+order_arco = list(range(1, 19))
 arco = ''.join('<img class="ft%s" src="vanessa-%d.webp" alt="Vanessa Aileen, foto %d" decoding="async"%s>' % (' on' if i == 0 else '', n, i + 1, '' if i == 0 else ' loading="lazy"') for i, n in enumerate(order_arco))
-wheel_order = [1, 3, 5, 7, 9, 11, 13, 15, 2, 6, 10, 14]
+wheel_order = [1, 3, 5, 7, 9, 11, 13, 15, 17, 2, 6, 10, 14, 18]
 wheel = ''.join('<div class="wheel-card"><img src="vanessa-%d.webp" alt="Vanessa Aileen" loading="lazy"></div>' % n for n in wheel_order)
 
 music_dom = ('<audio id="bg-music" src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/xv-vanessa-aileen-de-la-rosa/cancion.mp3" preload="none" loop></audio>\n'
