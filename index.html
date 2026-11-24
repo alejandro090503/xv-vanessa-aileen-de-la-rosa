@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
+<title>Mis XV Años · Vanessa Aileen · 16 Enero 2027</title>
+<meta name="description" content="Érase una vez... mis XV años. Sábado 16 de enero de 2027 · Tultitlán, Estado de México.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xv-vanessa-aileen-de-la-rosa.vercel.app/">
+<meta property="og:title" content="Mis XV Años · Vanessa Aileen">
+<meta property="og:description" content="Érase una vez... mis XV años. Sábado 16 de enero de 2027 · Tultitlán, Estado de México.">
+<meta property="og:image" content="https://xv-vanessa-aileen-de-la-rosa.vercel.app/og-image.jpg">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f6dcd8">
+<script>if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Great+Vibes&family=Jost:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="corona.webp">
+<link rel="preload" as="image" href="hero.jpg">
+<style>
+:root{
+  --bg:#fffcf8;--surface:#fff4e4;--card:#fffdf9;
+  --blush:#ffc3c2;--champ:#F7E7CE;--gold:#B76E79;--gold2:#D4AF37;
+  --accent:#B76E79;--deep:#8a4552;--plum:#5e2d40;--dark:#4e2430;--text:#4e2430;
+  --border:rgba(183,110,121,.30);--border-light:rgba(183,110,121,.14);
+  --metal:linear-gradient(100deg,#7e3f4a 0%,#c98a90 20%,#f9d3e0 36%,#D4AF37 46%,#B76E79 56%,#f9d3e0 70%,#8a4552 100%);
+  --champ-metal:linear-gradient(100deg,#a8835a,#f7e7ce 35%,#fffaf0 50%,#d9bf98 68%,#a8835a);
+  --gold-light:#F7E7CE;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{max-width:100vw}
+body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',serif;font-weight:500;font-size:19px;line-height:1.6;-webkit-text-size-adjust:100%;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.locked{overflow:hidden;height:100svh}
+img{display:block;max-width:100%}
+.metal{background:var(--metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 6s ease-in-out infinite}
+@keyframes sweep{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes floaty{50%{transform:translateY(-6px)}}
+@keyframes swing{0%,100%{transform:rotate(-5deg) translateY(0)}50%{transform:rotate(5deg) translateY(-5px)}}
+#sparks{position:fixed;inset:0;pointer-events:none;z-index:40}
+
+
+#libro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;
+  background:radial-gradient(ellipse at 50% 40%,#fff3ec 0%,#f7d9d6 55%,#e7b5b6 100%);transition:opacity 2s ease,visibility 2s}
+#libro.gone{opacity:0;visibility:hidden}
+#libro .tap{position:absolute;bottom:max(7vh,34px);left:0;right:0;text-align:center;font-family:'Cinzel',serif;font-weight:600;letter-spacing:.3em;font-size:.8rem;color:var(--rg-deep);animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}
+.book{position:relative;width:min(74vw,330px);transform-origin:center;aspect-ratio:3/4.2;perspective:1800px;cursor:pointer;transition:transform 1.4s cubic-bezier(.6,.05,.3,1)}
+.book.open{transform:scale(.62) translateX(50%)}
+.book.zoom{transform:scale(.8) translateX(50%);opacity:0;filter:blur(3px);transition:transform 2.2s cubic-bezier(.4,0,.2,1),opacity 1.8s ease,filter 1.8s ease}
+.page{position:absolute;inset:0;border-radius:4px 12px 12px 4px;overflow:hidden;
+  background:linear-gradient(90deg,#efe0cc 0%,#fff9ef 8%,#fffaf2 100%);box-shadow:0 18px 40px rgba(94,40,52,.28);display:grid;place-items:center;text-align:center;padding:10% 9%}
+.page::before{content:"";position:absolute;inset:7%;border:1px solid rgba(183,110,121,.55);border-radius:4px}
+.page img{width:78%;margin:0 auto 6px}
+.page p{font-family:'Cinzel Decorative',serif;font-size:clamp(.9rem,3.6vw,1.15rem);color:var(--rg-deep)}
+.page-stack{position:absolute;inset:3px -5px -4px 3px;border-radius:4px 12px 12px 4px;background:repeating-linear-gradient(0deg,#f4e7d4 0 2px,#fff8ec 2px 4px);box-shadow:0 14px 30px rgba(94,40,52,.25)}
+.cover{position:absolute;inset:0;transform-origin:left center;transform-style:preserve-3d;transition:transform 1.6s cubic-bezier(.6,.05,.25,1)}
+.book.open .cover{transform:rotateY(-178deg)}
+.cover-face,.cover-back{position:absolute;inset:0;border-radius:4px 12px 12px 4px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.cover-face{background:
+  radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.28),transparent 55%),
+  linear-gradient(135deg,#c97a86 0%,#a4525f 45%,#7e3f4a 100%);
+  box-shadow:inset 6px 0 10px rgba(0,0,0,.25),inset -2px 0 0 rgba(255,255,255,.15),0 22px 50px rgba(94,40,52,.38);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12% 10%;color:var(--champ)}
+.cover-face::before{content:"";position:absolute;inset:6%;border:2px solid transparent;border-radius:6px;
+  border-image:linear-gradient(135deg,#f7e7ce,#c9a77a,#fffaf0,#b98b5f,#f7e7ce) 1}
+.cover-face::after{content:"";position:absolute;inset:8.5%;border:1px solid rgba(247,231,206,.55);border-radius:4px}
+.spine{position:absolute;left:0;top:0;bottom:0;width:7%;background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(255,255,255,.08),rgba(0,0,0,.12));border-radius:4px 0 0 4px}
+.cover-face .corona{width:42%;filter:drop-shadow(0 4px 8px rgba(60,20,30,.45));animation:floaty 4s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-6px)}}
+.cover-face h1{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:clamp(1.25rem,5.6vw,1.75rem);line-height:1.25;margin-top:14px;
+  background:var(--champ-metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 5s ease-in-out infinite}
+.cover-face .nm{font-family:'Great Vibes',cursive;font-size:clamp(2.1rem,10vw,3rem);line-height:1.1;margin-top:8px;
+  background:var(--champ-metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 5s ease-in-out infinite}
+.cover-face small{font-family:'Cinzel',serif;font-weight:600;letter-spacing:.32em;font-size:.68rem;margin-top:10px;color:var(--champ)}
+.cover-face .rose-c{position:absolute;width:44%;bottom:-2%;right:-6%;transform:rotate(-12deg);opacity:.95;pointer-events:none}
+.cover-back{transform:rotateY(180deg);background:linear-gradient(90deg,#fff9ef,#efe0cc);box-shadow:inset -8px 0 14px rgba(120,80,60,.15);display:grid;place-items:center;padding:14%}
+.cover-back p{font-family:'Great Vibes',cursive;font-size:1.6rem;color:var(--rg);text-align:center;line-height:1.3}
+
+
+
+/* ── LAYOUT ── */
+.wrap{max-width:460px;margin:0 auto;position:relative;z-index:1;overflow:hidden;box-shadow:0 0 60px rgba(94,45,64,.08)}
+body.locked .wrap{opacity:0;transform:scale(1.03)}
+.wrap{transition:opacity 2.2s ease,transform 2.6s cubic-bezier(.2,.7,.2,1)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.1s ease,transform 1.1s ease}
+.rv.in{opacity:1;transform:none}
+.sec{padding:min(11vh,88px) 28px;position:relative;text-align:center}
+.sec-sm{padding:min(7vh,56px) 28px;position:relative;text-align:center}
+
+/* ── ORNAMENT ── */
+.orn{display:flex;align-items:center;gap:12px;margin:0 auto 26px;max-width:260px}
+.orn.bot{margin:24px auto 0}
+.orn-line{flex:1;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+.orn-diamond{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;opacity:.85}
+.orn-diamond-sm{width:4px;height:4px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;opacity:.55;margin:0 2px}
+
+/* ── TIPOGRAFÍA ── */
+.eyebrow{font-family:'Cinzel',serif;font-weight:600;font-size:.82rem;letter-spacing:.28em;text-transform:uppercase;color:var(--deep);text-align:center;margin-bottom:14px;display:block}
+.heading{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:clamp(1.8rem,8vw,2.4rem);color:var(--deep);text-align:center;line-height:1.2;margin-bottom:6px}
+.heading-sm{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:clamp(1.5rem,7vw,2rem);color:var(--deep);text-align:center;line-height:1.2}
+.sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.2rem;color:var(--deep);text-align:center;line-height:1.6}
+.data{font-family:'Jost',sans-serif;font-weight:500}
+
+/* ── HERO ── */
+#hero{position:relative;height:100vh;height:100dvh;min-height:640px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;text-align:center;padding-bottom:max(13vh,96px)}
+.hero-bg{position:absolute;inset:0;background:url('hero.jpg') 50% 18%/cover no-repeat;background-color:#e8cdc8;animation:heroZoom 22s ease-in-out infinite alternate}
+@keyframes heroZoom{to{transform:scale(1.07)}}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(94,45,64,.28) 0%,rgba(94,45,64,.05) 30%,rgba(70,28,48,.5) 70%,rgba(60,22,42,.78) 100%)}
+.hero-frame{position:absolute;inset:18px;border:1px solid rgba(247,231,206,.55);pointer-events:none}
+.hero-frame::before{content:'';position:absolute;inset:6px;border:1px solid rgba(247,231,206,.25)}
+.hero-content{position:relative;z-index:2;padding:0 24px;width:100%}
+.hero-seal{width:104px;height:104px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(255,244,228,.22),rgba(255,244,228,.06) 70%);border:1.5px solid rgba(247,231,206,.7);box-shadow:0 0 28px rgba(247,231,206,.35)}
+.hero-seal::before{content:'';position:absolute;inset:6px;border-radius:50%;border:1px solid rgba(247,231,206,.4)}
+.hero-seal .cr{position:absolute;top:-24px;left:50%;width:46px;margin-left:-23px;filter:drop-shadow(0 3px 5px rgba(0,0,0,.4))}
+.hero-seal b{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:1.55rem;letter-spacing:.04em;margin-top:6px;background:var(--champ-metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-tag{font-family:'Cinzel',serif;font-weight:600;font-size:.95rem;letter-spacing:.3em;text-transform:uppercase;color:var(--champ);display:block;margin-bottom:10px;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.hero-name{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:clamp(2.5rem,12.5vw,3.6rem);line-height:1.1;color:#fffaf0;display:block;text-shadow:0 2px 18px rgba(0,0,0,.55),0 0 30px rgba(247,231,206,.25)}
+.hero-date{font-family:'Jost',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.14em;text-transform:uppercase;color:var(--champ);margin-top:14px;white-space:nowrap;display:block;text-shadow:0 1px 10px rgba(0,0,0,.75)}
+.hero-city{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.15rem;color:#fffaf0;margin-top:4px;display:block;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:4px;transition:opacity .7s}
+.scroll-hint.hidden{opacity:0;pointer-events:none}
+.scroll-hint-txt{font-family:'Cinzel',serif;font-weight:600;font-size:.72rem;letter-spacing:.4em;text-transform:uppercase;color:var(--champ)}
+.scroll-hint svg{width:22px;height:22px;stroke:var(--champ);stroke-width:1.6;fill:none;stroke-linecap:round;animation:bounce 1.8s ease-in-out infinite}
+@keyframes bounce{50%{transform:translateY(7px)}}
+
+/* ── INTRO (Aurora) ── */
+.intro{background:linear-gradient(180deg,var(--bg),#fdebe6);overflow:hidden}
+.rosa-esq{position:absolute;width:62%;opacity:.95;pointer-events:none;animation:ramo 7s ease-in-out infinite}
+.rosa-esq.tl{top:-2%;left:-34%;width:56%;transform:scaleX(-1) rotate(10deg)}
+.rosa-esq.br{bottom:-3%;right:-34%;width:56%;transform:rotate(10deg);animation-delay:-3s}
+@keyframes ramo{50%{translate:0 -5px;rotate:2deg}}
+.intro .txt{font-family:'Cormorant Garamond',serif;font-size:1.3rem;line-height:1.7;color:var(--dark);max-width:350px;margin:22px auto 0;text-align:justify;text-align-last:center}
+.intro .txt::first-letter{font-family:'Cinzel Decorative',serif;font-weight:700;float:left;font-size:4rem;line-height:.8;padding:.08em .06em 0 0;margin:0 -.05em -.05em -.04em;background:var(--metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.intro .firma{font-family:'Great Vibes',cursive;font-size:2.3rem;color:var(--accent);margin-top:16px}
+.rueca-wrap{position:relative;width:min(50vw,210px);margin:30px auto 8px;aspect-ratio:.66}
+.rueca-wrap::before{content:"";position:absolute;inset:-14% -42%;border-radius:50%;z-index:0;background:radial-gradient(circle,rgba(255,255,255,.98) 0%,rgba(255,255,255,.75) 22%,rgba(255,209,232,.55) 42%,rgba(255,161,221,.28) 58%,rgba(255,161,221,0) 72%);animation:glow 4.5s ease-in-out infinite}
+.rueca-wrap::after{content:"";position:absolute;left:18%;right:18%;bottom:-7%;height:9%;border-radius:50%;background:radial-gradient(rgba(183,110,121,.35),transparent 70%);animation:shadow 4.5s ease-in-out infinite}
+.rueca{position:relative;z-index:1;width:100%;animation:levita 4.5s ease-in-out infinite;filter:drop-shadow(0 0 10px rgba(255,255,255,.9)) drop-shadow(0 0 22px rgba(255,161,221,.45))}
+@keyframes levita{0%,100%{transform:translateY(0) rotate(-1.2deg)}50%{transform:translateY(-16px) rotate(1.2deg)}}
+@keyframes glow{0%,100%{transform:scale(.94);opacity:.85}50%{transform:scale(1.06);opacity:1}}
+@keyframes shadow{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.7);opacity:.5}}
+.vuelo{position:relative;height:150px;max-width:380px;margin:28px auto 0}
+.hada{position:absolute;width:29%;height:auto;filter:drop-shadow(0 8px 10px rgba(80,40,60,.18))}
+.hada.f{left:2%;top:6px;animation:fly1 5s ease-in-out infinite}
+.hada.a{left:36%;top:46px;animation:fly2 5.6s ease-in-out infinite}
+.hada.p{right:2%;top:0;animation:fly1 6s ease-in-out infinite reverse}
+@keyframes fly1{50%{transform:translate(6px,-14px) rotate(-4deg)}}
+@keyframes fly2{50%{transform:translate(-8px,-10px) rotate(4deg)}}
+
+/* ── ARCO DE FOTOS ── */
+.retrato{background:linear-gradient(180deg,#fdebe6,var(--surface))}
+.arco{position:relative;width:min(78vw,330px);margin:26px auto 0;aspect-ratio:1/1.32;border-radius:999px 999px 18px 18px;padding:9px;background:var(--metal);background-size:220% 100%;animation:sweep 6s ease-in-out infinite;box-shadow:0 0 40px rgba(255,161,221,.45),0 20px 50px rgba(126,63,74,.2);overflow:hidden}
+.arco>img.ft{position:absolute;inset:9px;width:calc(100% - 18px);height:calc(100% - 18px);object-fit:cover;object-position:50% 30%;border-radius:990px 990px 10px 10px;opacity:0;transition:opacity 1.8s ease,transform 8s ease;transform:scale(1.02)}
+.arco>img.ft.on{opacity:1;transform:scale(1.07)}
+.arco-name{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:1.5rem;color:var(--deep);margin-top:22px}
+
+/* ── FAMILIA ── */
+.fam-box{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:26px 20px;position:relative;max-width:380px;margin:22px auto 0}
+.fam-box::before{content:'';position:absolute;inset:8px;border:1px solid var(--border-light);pointer-events:none}
+.fam-lbl{font-family:'Cinzel',serif;font-weight:600;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--deep);display:block;margin-bottom:10px}
+.fam-name{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.45rem;color:var(--dark);line-height:1.35;display:block}
+.fam-and{font-style:italic;font-weight:600;color:var(--accent);font-size:1.1rem;display:block;margin:2px 0}
+.fam-box+.fam-box{margin-top:14px}
+
+/* ── COUNTDOWN (anillos dorados) ── */
+.cd{color:#fff;background:linear-gradient(180deg,var(--surface) 0,rgba(255,244,228,0) 6%,rgba(255,244,228,0) 94%,var(--bg) 100%),radial-gradient(ellipse at 50% 45%,rgba(52,20,46,.64),rgba(52,20,46,.4) 70%),url('bg-bosque.jpg') center/cover;padding:min(14vh,110px) 22px}
+.cd .eyebrow{color:var(--champ)}
+.cd h2{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:clamp(1.6rem,7vw,2.2rem);line-height:1.2;background:var(--champ-metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 5s ease-in-out infinite;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+.cd .cd-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.3rem;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6);margin:6px 0 34px}
+.cd-ring-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 18px;max-width:min(400px,94%);margin:0 auto;align-items:center;justify-items:center}
+.cd-ring-item{position:relative;aspect-ratio:1;width:100%;display:flex;align-items:center;justify-content:center;transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
+.cd-ring-grid>:nth-child(1){width:92%}.cd-ring-grid>:nth-child(2){width:80%}.cd-ring-grid>:nth-child(3){width:80%}.cd-ring-grid>:nth-child(4){width:92%}
+.cd-ring-item::after{content:"";position:absolute;inset:-10px;border-radius:50%;pointer-events:none;border:1px dashed rgba(247,231,206,.45);animation:rotorSpin 55s linear infinite}
+.cd-ring-grid>:nth-child(2)::after{animation-duration:40s;animation-direction:reverse}
+.cd-ring-grid>:nth-child(3)::after{animation-duration:48s}
+.cd-ring-grid>:nth-child(4)::after{animation-duration:32s;animation-direction:reverse}
+.cd-ring-item::before{content:"";position:absolute;inset:16%;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(212,175,55,.32) 0%,rgba(255,161,221,.1) 52%,transparent 78%);animation:cdGlow 5s ease-in-out infinite}
+@keyframes cdGlow{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.2)}}
+.cd-ring-svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg);overflow:visible}
+.cd-ring-track{fill:none;stroke:rgba(247,231,206,.28);stroke-width:1.4}
+.cd-ring-prog{fill:none;stroke:#D4AF37;stroke-width:3;stroke-linecap:round;stroke-dasharray:326.73;stroke-dashoffset:326.73;transition:stroke-dashoffset .9s cubic-bezier(.34,1.2,.64,1);filter:drop-shadow(0 0 8px rgba(212,175,55,.7))}
+.cd-ring-grid>:nth-child(2) .cd-ring-prog{stroke:#F7E7CE}
+.cd-ring-grid>:nth-child(3) .cd-ring-prog{stroke:#e6a3ad}
+.cd-ring-grid>:nth-child(4) .cd-ring-prog{stroke:#fff3d0}
+.cd-rotor{position:absolute;inset:8px;border-radius:50%;pointer-events:none;border:1px dashed rgba(212,175,55,.4);animation:rotorSpin 42s linear infinite}
+.cd-rotor-mid{animation-duration:30s}.cd-rotor-rev{animation-duration:36s;animation-direction:reverse}.cd-rotor-fast{animation-duration:14s}
+@keyframes rotorSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.cd-dot{position:absolute;top:-4px;left:50%;width:9px;height:9px;border-radius:50%;background:#D4AF37;transform:translateX(-50%);box-shadow:0 0 0 2px rgba(255,255,255,.85),0 0 12px rgba(212,175,55,.8),0 0 24px rgba(212,175,55,.4)}
+.cd-ripple{position:absolute;inset:10%;border-radius:50%;border:1px solid #F7E7CE;opacity:0;pointer-events:none}
+.cd-ring-item.tick .cd-ripple{animation:cdRipple 1.4s ease-out}
+@keyframes cdRipple{0%{transform:scale(.4);opacity:.8}100%{transform:scale(2.2);opacity:0}}
+.cd-ring-center{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
+.cd-num{display:block;font-family:'Cinzel',serif;font-weight:600;color:#fffaf0;line-height:1;font-variant-numeric:tabular-nums;font-size:clamp(2rem,10.5vw,2.8rem);text-shadow:0 2px 10px rgba(0,0,0,.55)}
+.cd-ring-lbl{font-family:'Jost',sans-serif;font-weight:600;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;padding-left:.2em;color:var(--champ);margin-top:8px}
+
+/* ── UBICACIONES (estilo 149: icono grande) ── */
+.locs{background:linear-gradient(180deg,var(--bg),var(--surface))}
+.loc-card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:30px 22px 26px;margin:22px auto 0;max-width:380px;position:relative;box-shadow:0 14px 40px rgba(126,63,74,.1)}
+.loc-card::before{content:'';position:absolute;inset:8px;border:1px solid var(--border-light);border-radius:16px;pointer-events:none}
+.lev{display:inline-block;position:relative;animation:levIcon 5.2s ease-in-out infinite}
+.lev::before{content:"";position:absolute;inset:-10% -14%;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.3),transparent 68%);animation:glow 5.2s ease-in-out infinite;z-index:-1}
+@keyframes levIcon{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-6px) scale(1.035)}}
+.loc-ic{width:96px;height:auto;color:var(--deep);fill:currentColor;display:block}
+.loc-ic.couple{width:118px}
+.loc-ttl{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:1.35rem;color:var(--deep);margin-top:14px;line-height:1.2}
+.loc-time{font-family:'Jost',sans-serif;font-weight:600;font-size:2rem;letter-spacing:.04em;color:var(--dark);margin:8px 0 4px}
+.loc-venue{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.35rem;color:var(--accent);margin-bottom:4px}
+.loc-addr{font-family:'Jost',sans-serif;font-weight:500;font-size:1rem;line-height:1.55;color:var(--dark);max-width:290px;margin:0 auto}
+.btn-map{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;background:var(--deep);color:#fffaf0;text-decoration:none;font-family:'Cinzel',serif;font-weight:600;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;padding:15px 30px;border-radius:50px;box-shadow:0 8px 20px rgba(138,69,82,.3);min-height:48px}
+.btn-map svg{width:15px;height:15px;fill:currentColor}
+.btn-cal{display:inline-flex;align-items:center;gap:8px;margin-top:24px;border:1px solid var(--accent);color:var(--deep);text-decoration:none;font-family:'Cinzel',serif;font-weight:600;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;padding:13px 22px;border-radius:50px;min-height:46px}
+.btn-cal svg{width:14px;height:14px;fill:currentColor}
+
+/* ── ITINERARIO ── */
+.itin{overflow:hidden;background:var(--bg)}
+.itin-list{display:flex;flex-direction:column;margin-top:24px;position:relative}
+.itin-list::before{content:'';position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:.6}
+.itin-item{display:flex;flex-direction:column;align-items:center;padding:20px 16px 8px;position:relative;z-index:1}
+.itin-dot{width:9px;height:9px;background:var(--gold2);transform:rotate(45deg);margin-bottom:12px;box-shadow:0 0 0 4px rgba(212,175,55,.16),0 0 14px rgba(212,175,55,.5);animation:dotPulse 3s ease-in-out infinite}
+.itin-item:nth-child(even) .itin-dot{background:var(--accent);box-shadow:0 0 0 4px rgba(183,110,121,.16),0 0 14px rgba(183,110,121,.5)}
+@keyframes dotPulse{50%{box-shadow:0 0 0 7px rgba(212,175,55,.1),0 0 22px rgba(212,175,55,.7)}}
+.itin-time{font-family:'Jost',sans-serif;font-weight:600;font-size:2rem;letter-spacing:.06em;color:var(--dark);line-height:1;margin-bottom:6px;background:var(--bg);padding:2px 10px}
+.itin-ev{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:1.3rem;color:var(--deep);background:var(--bg);padding:0 10px}
+
+/* ── DRESS CODE ── */
+.dress{background:var(--surface)}
+.dc-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.25rem;color:var(--text);line-height:1.7;margin:20px 0 22px}
+.dc-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px;max-width:380px;margin-left:auto;margin-right:auto}
+.dc-col{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:22px 14px;text-align:center}
+.dc-col svg{margin:0 auto;animation:floaty 5s ease-in-out infinite}
+.dc-col-ttl{font-family:'Cinzel',serif;font-weight:600;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark);margin-top:14px}
+.dc-avoid-lbl{font-family:'Cinzel',serif;font-weight:600;font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;color:var(--deep);display:block;margin:20px 0 14px}
+.dc-avoid-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.dc-avoid-sw{display:flex;flex-direction:column;align-items:center;gap:6px;width:62px}
+.dc-avoid-circle{width:38px;height:38px;border-radius:50%;position:relative;border:1px solid rgba(0,0,0,.12)}
+.dc-avoid-circle::after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:2px;background:#8a1f2e;transform:translateX(-50%) rotate(45deg);border-radius:2px}
+.dc-avoid-name{font-family:'Jost',sans-serif;font-weight:500;font-size:.8rem;color:var(--dark);text-align:center;line-height:1.3}
+
+/* ── GALERÍA 3D ── */
+#galeria{padding:72px 0 80px;background:linear-gradient(180deg,var(--bg) 0%,var(--surface) 100%);text-align:center;overflow:hidden}
+.gal-orn{width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:12px auto 0}
+.wheel-scene{position:relative;width:100%;height:400px;margin:36px auto 0;perspective:1300px;transform-style:preserve-3d}
+.wheel-ring{position:absolute;width:100%;height:100%;transform-style:preserve-3d;cursor:grab}
+.wheel-ring.dragging{cursor:grabbing}
+.wheel-card{position:absolute;width:150px;height:210px;left:50%;top:50%;margin-left:-75px;margin-top:-105px;border-radius:16px;overflow:hidden;border:2px solid rgba(212,175,55,.55);box-shadow:0 12px 36px rgba(126,63,74,.28);user-select:none;-webkit-user-select:none;background:#f3e1dc}
+.wheel-card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.gal-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.05rem;letter-spacing:.12em;color:var(--deep);margin-top:20px}
+
+/* ── REGALOS ── */
+#regalos{background:linear-gradient(180deg,#6e3446,var(--plum));overflow:hidden}
+#regalos .eyebrow{color:var(--champ)}
+#regalos .heading{background:var(--champ-metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 5s ease-in-out infinite}
+.gift-msg{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.3rem;line-height:1.75;color:#fff3e6;margin:0 auto 26px;max-width:340px}
+.gift-opts{display:flex;flex-direction:column;gap:14px;max-width:340px;margin:0 auto}
+.gift-opt{background:rgba(255,250,240,.07);border:1px solid rgba(247,231,206,.4);border-radius:6px;padding:28px 22px;text-align:center;position:relative}
+.gift-opt::before{content:'';position:absolute;inset:8px;border:1px solid rgba(247,231,206,.16);pointer-events:none}
+.gift-bank-lbl{font-family:'Cinzel',serif;font-weight:600;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--champ);display:block;margin-bottom:10px}
+.gift-bank-name{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:1.5rem;color:#fffaf0;display:block;margin-bottom:12px}
+.gift-detail{font-family:'Jost',sans-serif;font-weight:500;font-size:1.02rem;color:#fff3e6;line-height:1.8}
+.btn-gift{display:inline-flex;align-items:center;justify-content:center;margin-top:18px;background:var(--champ);color:var(--plum);text-decoration:none;font-family:'Cinzel',serif;font-weight:600;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;padding:15px 26px;border-radius:50px;min-height:48px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.gift-ic{width:54px;margin:0 auto 12px;color:var(--champ);animation:floaty 5s ease-in-out infinite}
+
+#rsvp-section{position:relative;overflow:hidden;padding:min(11vh,88px) 22px;background:linear-gradient(180deg,var(--surface),#fdebe6)}
+.rsvp-card{max-width:420px;margin:0 auto;background:rgba(255,255,255,.84);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(191,146,128,.38);padding:clamp(40px,6vw,64px) clamp(24px,5vw,48px);position:relative;box-shadow:0 24px 64px rgba(58,37,37,.10),0 4px 20px rgba(191,146,128,.14)}
+.rsvp-card::before{content:"";position:absolute;inset:10px;border:1px solid rgba(191,146,128,.20);pointer-events:none}
+.rsvp-corner{position:absolute;width:44px;height:44px;pointer-events:none}
+.rsvp-corner--tl{top:0;left:0}
+.rsvp-corner--tr{top:0;right:0;transform:scaleX(-1)}
+.rsvp-corner--bl{bottom:0;left:0;transform:scaleY(-1)}
+.rsvp-corner--br{bottom:0;right:0;transform:scale(-1,-1)}
+.rsvp-inner{text-align:center}
+.rsvp-ornament{display:block;margin:0 auto 24px;width:min(240px,75vw);height:auto}
+.rsvp-title{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:clamp(24px,7vw,32px);color:var(--deep);margin-bottom:14px;line-height:1.15}
+.rsvp-title em{color:var(--deep);font-style:normal}
+.rsvp-text{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text);line-height:1.85;margin-bottom:28px;font-weight:500;max-width:360px;margin-left:auto;margin-right:auto;opacity:.92}
+.rsvp-divider{display:flex;align-items:center;gap:14px;margin-bottom:26px;max-width:280px;margin-left:auto;margin-right:auto}
+.rsvp-divider::before,.rsvp-divider::after{content:"";flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(191,146,128,.45),transparent)}
+.rsvp-divider-heart{color:var(--gold);flex-shrink:0;opacity:.92}
+.rsvp-pases-display{max-width:360px;margin:0 auto 24px;padding:18px 28px;background:rgba(191,146,128,.08);border:1px solid rgba(191,146,128,.28);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.rsvp-pases-label{font-family:'Cinzel',serif;font-size:13px;font-weight:600;letter-spacing:.35em;text-transform:uppercase;color:var(--text);opacity:.7}
+.rsvp-pases-num{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(32px,8vw,40px);color:var(--deep);line-height:1}
+.rsvp-toggle{display:flex;gap:10px;max-width:360px;margin:0 auto 20px}
+.rsvp-toggle-btn{flex:1;padding:14px 8px;border:1.5px solid rgba(191,146,128,.28);background:rgba(255,255,255,.6);cursor:pointer;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--text);border-radius:8px;transition:all .25s}
+.rsvp-toggle-btn:disabled{opacity:.45;cursor:not-allowed}
+.rsvp-toggle-btn.selected-yes{background:rgba(114,47,55,.10);border-color:var(--deep);color:var(--deep)}
+.rsvp-toggle-btn.selected-no{background:rgba(191,146,128,.09);border-color:var(--gold);color:var(--gold)}
+.rsvp-fields{display:flex;flex-direction:column;gap:10px;max-width:360px;margin:0 auto 20px}
+.rsvp-asignados{display:flex;flex-direction:column;gap:12px;max-width:400px;margin:0 auto 22px}
+.rsvp-person-card{display:flex;flex-direction:column;gap:10px;padding:14px 16px;background:rgba(255,255,255,.78);border:1.5px solid rgba(191,146,128,.32);border-radius:14px;transition:border-color .25s,background .25s}
+.rsvp-person-card[data-choice="yes"]{border-color:var(--deep);background:rgba(114,47,55,.08)}
+.rsvp-person-card[data-choice="no"]{border-color:var(--gold);background:rgba(191,146,128,.12)}
+.rsvp-person-name{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;color:var(--dark);text-align:center;line-height:1.1}
+.rsvp-person-toggle{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rsvp-mini-btn{padding:10px 12px;border:1.5px solid rgba(191,146,128,.32);border-radius:10px;background:rgba(255,255,255,.6);font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:var(--text);letter-spacing:.16em;cursor:pointer;transition:all .25s;text-transform:uppercase;-webkit-tap-highlight-color:transparent;min-height:42px}
+.rsvp-mini-btn:hover:not(:disabled){border-color:var(--gold);background:rgba(255,255,255,.9)}
+.rsvp-mini-btn:disabled{opacity:.55;cursor:not-allowed}
+.rsvp-mini-yes-on{background:var(--deep)!important;border-color:var(--deep)!important;color:#fff!important}
+.rsvp-mini-no-on{background:var(--gold)!important;border-color:var(--gold)!important;color:#fff!important}
+.rsvp-input{width:100%;padding:15px 20px;border:1.5px solid rgba(191,146,128,.28);border-radius:12px;background:rgba(255,255,255,.78);font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text);letter-spacing:.03em;outline:none;transition:border-color .3s,box-shadow .3s;-webkit-appearance:none;min-height:50px}
+.rsvp-input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(191,146,128,.15);background:rgba(255,255,255,.96)}
+.rsvp-input::placeholder{color:var(--text);opacity:.5;font-weight:400}
+.rsvp-btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:360px;margin:0 auto;padding:18px 36px;border-radius:50px;border:1.5px solid rgba(191,146,128,.5);background:linear-gradient(135deg,rgba(191,146,128,.18) 0%,rgba(247,165,151,.22) 100%);font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--dark);cursor:pointer;min-height:54px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s;box-shadow:0 6px 20px rgba(191,146,128,.25),0 2px 8px rgba(191,146,128,.18)}
+.rsvp-btn::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,var(--gold) 0%,#f7a597 50%,var(--gold) 100%);opacity:0;transition:opacity .4s;border-radius:50px}
+.rsvp-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(191,146,128,.3)}
+.rsvp-btn:hover::after{opacity:1}
+.rsvp-btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+.rsvp-btn > *{position:relative;z-index:1}
+.rsvp-deadline{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--deep);padding-left:.3em;font-weight:700}
+#rsvp-pases-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--text);text-align:center;margin:0 auto 20px;max-width:360px;opacity:.92}
+#rsvp-feedback{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;text-align:center;margin:14px auto 0;max-width:360px;display:none}
+.rsvp-ok{display:none;text-align:center;padding:28px 16px}
+.rsvp-ok-icon{font-size:48px;margin-bottom:14px;display:block}
+.rsvp-ok-title{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:26px;color:var(--dark);margin-bottom:10px;display:block}
+.rsvp-ok-msg{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--text);line-height:1.7;opacity:.92}
+
+#album{background:var(--bg);text-align:center}
+#album .heading{color:var(--accent)}
+.album-txt{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;line-height:1.85;color:var(--text);text-align:center;margin:0 auto 26px;max-width:340px}
+.album-qr{position:relative;display:inline-flex;flex-direction:column;align-items:center;gap:18px}
+.qr-img{width:200px;height:200px;border-radius:14px;border:1px solid var(--border);padding:12px;background:var(--card);box-shadow:0 8px 30px rgba(171,92,92,.14)}
+.qr-img img{width:100%;height:100%;display:block;border-radius:6px}
+.album-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 30px;border:1px solid var(--accent);border-radius:999px;background:var(--accent);color:#fff;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.25em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 22px rgba(171,92,92,.25)}
+.album-btn:active{transform:scale(.97)}
+.album-qr.bloqueado .qr-img img{filter:blur(7px);opacity:.75}
+.album-qr.bloqueado .album-btn{pointer-events:none;opacity:.45}
+.album-aviso{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--text);opacity:.8;line-height:1.7;max-width:300px;margin:20px auto 0}
+.album-qr:not(.bloqueado) + .album-aviso{display:none}
+.copy-toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:10px 24px;border-radius:50px;opacity:0;pointer-events:none;z-index:9999;transition:opacity .3s}
+.copy-toast.show{opacity:1}
+
+/* ── FOOTER ── */
+#footer{padding:60px 28px 48px;text-align:center;background:var(--plum)}
+.footer-names{font-family:'Cinzel Decorative',serif;font-weight:700;font-size:1.8rem;background:var(--champ-metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 5s ease-in-out infinite}
+.footer-date{font-family:'Jost',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.24em;text-transform:uppercase;color:var(--champ);margin-top:14px}
+.footer-hr{width:40px;height:1px;background:var(--champ);margin:24px auto 16px;opacity:.4}
+.footer-credit{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:.95rem;color:rgba(247,231,206,.7);text-decoration:none;display:block}
+.copy-toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%);background:var(--deep);color:#fff;font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;padding:10px 24px;border-radius:50px;opacity:0;pointer-events:none;z-index:9999;transition:opacity .3s}
+.copy-toast.show{opacity:1}
+
+
+#music-btn{position:fixed;right:12px;bottom:16px;z-index:45;width:78px;height:66px;border:0;background:none;padding:0;cursor:pointer;
+  -webkit-tap-highlight-color:transparent;opacity:0;pointer-events:none;transition:opacity .8s ease,transform .3s ease}
+#music-btn.show{opacity:1;pointer-events:auto}
+#music-btn:active{transform:scale(.92)}
+#music-btn::before{content:"";position:absolute;inset:-14px -10px;border-radius:50%;
+  background:radial-gradient(closest-side,#fff 0%,rgba(255,255,255,.96) 38%,rgba(255,226,238,.8) 58%,rgba(255,161,221,.32) 78%,rgba(255,161,221,0));transition:opacity .6s,transform .6s;opacity:1}
+#music-btn img{position:relative;width:100%;height:100%;object-fit:contain;transition:filter .6s ease,transform .6s ease;
+  filter:drop-shadow(0 1px 0 #fff) drop-shadow(0 0 1.5px rgba(126,63,74,.9)) drop-shadow(0 4px 6px rgba(126,63,74,.45)) saturate(.8) brightness(.95)}
+#music-btn.playing::before{opacity:1;animation:halo 2.4s ease-in-out infinite}
+#music-btn.playing img{filter:drop-shadow(0 0 1.5px rgba(126,63,74,.9)) drop-shadow(0 0 8px rgba(255,236,170,.95)) drop-shadow(0 4px 8px rgba(126,63,74,.4)) saturate(1.15) brightness(1.06);animation:bob 2.2s ease-in-out infinite}
+#music-btn .hint{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);font-family:'Cinzel',serif;font-weight:600;font-size:.62rem;letter-spacing:.2em;color:var(--rg-deep);padding:2px 8px;border-radius:10px;background:rgba(255,255,255,.85);white-space:nowrap;text-shadow:0 0 6px #fff,0 0 10px #fff;transition:opacity .5s}
+#music-btn.playing .hint{opacity:0}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-5px) rotate(4deg)}}
+@keyframes halo{50%{transform:scale(1.12)}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body class="locked">
+<canvas id="sparks"></canvas>
+
+<div id="libro" role="button" aria-label="Abrir el libro">
+  <div class="book" id="book">
+    <div class="page-stack"></div>
+    <div class="page">
+      <div>
+        <img src="castillo.webp" alt="">
+        <p>…y así comienza mi historia</p>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="cover-face">
+        <div class="spine"></div>
+        <img class="corona" src="corona.webp" alt="">
+        <h1>Érase una vez</h1>
+        <div class="nm">Vanessa</div>
+        <small>MIS XV AÑOS</small>
+        <img class="rose-c" src="rosas-ramo.webp" alt="">
+      </div>
+      <div class="cover-back"><p>Una vez en un sueño…</p></div>
+    </div>
+  </div>
+  <div class="tap">TOCA PARA ABRIR EL CUENTO</div>
+</div>
+
+<div class="copy-toast" id="copyToast">¡Copiado!</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ic-church" viewBox="80.00 2329.12 141.22 124.74"><path fill-rule="nonzero" d="M98.25 2397.36L102.86 2403.01L150.61 2363.99L198.36 2403.01L202.98 2397.36L154.26 2357.55L154.26 2344.87L160.01 2344.87L160.01 2337.57L154.26 2337.57L154.26 2329.12L146.97 2329.12L146.97 2337.57L141.22 2337.57L141.22 2344.87L146.97 2344.87L146.97 2357.55L98.25 2397.36"/><path fill-rule="nonzero" d="M150.61 2370.91L113.55 2401.49L113.55 2453.85L138.19 2453.85L138.19 2431.11C138.19 2424.46 143.58 2419.07 150.23 2419.07L151 2419.07C157.65 2419.07 163.04 2424.46 163.04 2431.11L163.04 2453.85L187.67 2453.85L187.67 2401.49L150.61 2370.91"/><path fill-rule="nonzero" d="M80 2453.85L108.32 2453.85L108.32 2411.42L80 2427.86L80 2453.85"/><path fill-rule="nonzero" d="M192.9 2411.42L192.9 2453.85L221.23 2453.85L221.23 2427.86L192.9 2411.42"/></symbol>
+  <symbol id="ic-gift" viewBox="172.99 4329.27 91.45 102.89"><path fill-rule="nonzero" d="M256.72 4359.1L248.59 4359.1C250.07 4356.47 249.06 4349.21 247.72 4345.17C243.3 4332.18 225.9 4346.3 222.89 4348.98C221.59 4347.93 218.37 4348.43 216.83 4348.32C216 4348.32 215.24 4348.54 214.53 4348.98C211.55 4346.32 194.12 4332.19 189.71 4345.15C188.36 4349.19 187.35 4356.46 188.84 4359.1L180.7 4359.1C180.38 4359.1 180.07 4359.13 179.76 4359.19C179.45 4359.25 179.15 4359.34 178.86 4359.46C178.57 4359.58 178.29 4359.73 178.03 4359.91C177.77 4360.08 177.53 4360.28 177.3 4360.51C177.08 4360.73 176.88 4360.97 176.71 4361.23C176.53 4361.49 176.38 4361.77 176.26 4362.06C176.14 4362.35 176.05 4362.65 175.99 4362.96C175.93 4363.27 175.9 4363.58 175.9 4363.9L175.9 4380.82C175.9 4381.03 175.94 4381.24 176.02 4381.43C176.1 4381.63 176.22 4381.8 176.37 4381.95C176.52 4382.1 176.69 4382.22 176.88 4382.3C177.08 4382.38 177.29 4382.42 177.5 4382.42L180.63 4382.42L180.63 4424.45C180.63 4424.76 180.67 4425.07 180.73 4425.38C180.79 4425.69 180.88 4425.99 181 4426.28C181.12 4426.57 181.27 4426.85 181.44 4427.11C181.62 4427.38 181.82 4427.62 182.04 4427.84C182.26 4428.06 182.51 4428.26 182.77 4428.44C183.03 4428.61 183.31 4428.76 183.6 4428.88C183.89 4429 184.19 4429.09 184.5 4429.16C184.81 4429.22 185.12 4429.25 185.43 4429.25C193.96 4429.25 251.98 4429.25 251.98 4429.25C252.3 4429.25 252.61 4429.22 252.92 4429.16C253.23 4429.09 253.53 4429 253.82 4428.88C254.11 4428.76 254.39 4428.61 254.65 4428.44C254.91 4428.26 255.16 4428.06 255.38 4427.84C255.6 4427.62 255.8 4427.38 255.97 4427.11C256.15 4426.85 256.3 4426.57 256.42 4426.28C256.54 4425.99 256.63 4425.69 256.69 4425.38C256.75 4425.07 256.79 4424.76 256.79 4424.45L256.79 4382.42L259.92 4382.42C260.13 4382.42 260.34 4382.38 260.53 4382.3C260.73 4382.22 260.9 4382.1 261.05 4381.95C261.2 4381.8 261.32 4381.63 261.4 4381.43C261.48 4381.24 261.52 4381.03 261.52 4380.82L261.52 4363.9C261.52 4363.58 261.49 4363.27 261.43 4362.96C261.37 4362.65 261.28 4362.35 261.16 4362.06C261.03 4361.77 260.89 4361.49 260.71 4361.23C260.54 4360.97 260.34 4360.73 260.11 4360.51C259.89 4360.28 259.65 4360.08 259.39 4359.91C259.13 4359.73 258.85 4359.58 258.56 4359.46C258.27 4359.34 257.97 4359.25 257.66 4359.19C257.35 4359.13 257.04 4359.1 256.72 4359.1M227.1 4359.1C231.23 4355.3 241.18 4353.1 246.01 4352.42C246.33 4355.15 246.29 4358.54 244.23 4359.1L227.1 4359.1M225.5 4379.22C225.38 4379.21 212.03 4379.23 211.92 4379.22L211.92 4362.3C211.92 4362.3 224.21 4362.3 225.5 4362.3L225.5 4379.22M239.2 4343.02C243.48 4341.94 244.91 4345.82 245.45 4349.27C241.31 4349.87 230.91 4351.8 225.04 4356.55C225.13 4354.87 225.07 4353.2 224.84 4351.53C229.06 4347.73 233.84 4344.89 239.2 4343.02M216.83 4351.52L220.59 4351.52C220.75 4351.52 220.91 4351.55 221.07 4351.61C221.22 4351.68 221.36 4351.77 221.47 4351.89C221.59 4352 221.68 4352.14 221.75 4352.29C221.81 4352.45 221.84 4352.61 221.84 4352.77L221.84 4359.1L215.58 4359.1L215.58 4352.77C215.58 4352.61 215.61 4352.45 215.67 4352.29C215.74 4352.14 215.83 4352 215.95 4351.89C216.06 4351.77 216.2 4351.68 216.35 4351.61C216.5 4351.55 216.66 4351.52 216.83 4351.52L216.83 4351.52M192.78 4346.04C192.86 4345.77 192.97 4345.5 193.1 4345.24C193.23 4344.98 193.39 4344.74 193.57 4344.52C193.75 4344.29 193.95 4344.08 194.17 4343.9C194.39 4343.71 194.63 4343.55 194.88 4343.41C195.13 4343.26 195.4 4343.15 195.67 4343.06C195.95 4342.97 196.23 4342.91 196.52 4342.88C196.8 4342.84 197.09 4342.84 197.38 4342.86C197.67 4342.89 197.95 4342.94 198.23 4343.02C203.58 4344.89 208.36 4347.73 212.58 4351.52C212.36 4353.19 212.3 4354.87 212.38 4356.55C206.51 4351.8 196.11 4349.87 191.97 4349.27C192.2 4348.21 192.46 4347.13 192.78 4346.04M191.42 4352.42C196.42 4353.13 205.69 4355.19 210.44 4359.1L193.19 4359.1C191.13 4358.54 191.09 4355.15 191.42 4352.42L191.42 4352.42M179.1 4363.9C179.1 4363.69 179.14 4363.48 179.22 4363.29C179.3 4363.09 179.42 4362.92 179.57 4362.77C179.72 4362.62 179.89 4362.5 180.09 4362.42C180.28 4362.34 180.49 4362.3 180.7 4362.3L208.72 4362.3L208.72 4379.22C206.8 4379.22 180.25 4379.22 179.1 4379.22L179.1 4363.9M183.83 4424.45L183.83 4382.42L210.85 4382.42L210.85 4426.05L185.43 4426.05C185.22 4426.05 185.02 4426.01 184.82 4425.93C184.63 4425.84 184.45 4425.73 184.3 4425.58C184.15 4425.43 184.04 4425.26 183.96 4425.06C183.88 4424.86 183.83 4424.66 183.83 4424.45M214.05 4426.05L214.05 4382.42L223.37 4382.42L223.37 4426.05L214.05 4426.05M253.58 4424.45C253.58 4424.66 253.54 4424.86 253.46 4425.06C253.38 4425.26 253.27 4425.43 253.12 4425.58C252.97 4425.73 252.79 4425.84 252.6 4425.93C252.4 4426.01 252.2 4426.05 251.98 4426.05L226.57 4426.05L226.57 4382.42L253.58 4382.42L253.58 4424.45M258.32 4379.22C257.3 4379.23 230.49 4379.21 228.7 4379.22L228.7 4362.3L256.72 4362.3C256.93 4362.3 257.14 4362.34 257.33 4362.42C257.53 4362.5 257.7 4362.62 257.85 4362.77C258 4362.92 258.12 4363.09 258.2 4363.29C258.28 4363.48 258.32 4363.69 258.32 4363.9L258.32 4379.22"/></symbol>
+  <symbol id="ic-couple" viewBox="67.70 2655.12 177.17 149.82"><path fill-rule="nonzero" d="M118.48 2756.16C117.52 2755.58 116.96 2754.81 116.42 2754.03C115.72 2752.99 114.73 2752.41 113.58 2751.97C111.93 2751.33 110.18 2751.38 108.48 2751.12C108.03 2751.05 107.57 2750.95 107.13 2750.82C105.34 2750.28 104.72 2749.47 104.62 2747.61C104.58 2746.92 104.54 2746.24 104.48 2745.56C104.42 2744.87 104.22 2744.22 103.68 2743.73C103.21 2743.3 103.06 2742.75 103.11 2742.14C103.26 2740.33 103.24 2738.54 102.44 2736.85C102.23 2736.41 102.15 2735.92 102.15 2735.42C102.14 2734.53 102.51 2734.26 103.34 2734.6C104.45 2735.04 105.56 2735.47 106.71 2735.79C108.65 2736.33 110.65 2736.48 112.64 2736.52C114.5 2736.55 116.33 2736.74 118.18 2736.93C120.91 2737.2 123.44 2736.4 125.8 2735.09C129.77 2732.9 132.76 2729.65 135.53 2726.15C136.23 2725.26 136.56 2724.38 136.56 2723.23C136.55 2721.06 137.3 2719.03 138.06 2717.01C138.78 2715.1 139.56 2713.2 140.56 2711.41C140.68 2711.2 140.81 2710.99 140.95 2710.79C141.42 2710.12 141.41 2709.44 140.92 2708.75C137.91 2704.54 135.08 2700.22 133 2695.46C131.77 2692.61 131.16 2689.67 131.52 2686.55C131.64 2685.52 131.61 2684.46 131.83 2683.43C131.97 2682.76 132.32 2682.18 132.64 2681.5C132.02 2681.48 131.74 2681.83 131.49 2682.22C130.93 2683.1 130.2 2683.8 129.26 2684.28C127.69 2685.08 126.22 2684.82 125.03 2683.52C124.72 2683.17 124.36 2682.97 123.9 2682.93C123.63 2682.92 123.37 2682.85 123.1 2682.8C121.12 2682.43 120.74 2681.87 120.07 2679.9C120.02 2679.74 119.94 2679.55 120.1 2679.42C120.26 2679.28 120.43 2679.42 120.57 2679.5C123.05 2681.06 126.4 2678.33 126.66 2675.76C126.09 2676.34 125.66 2676.86 125.15 2677.3C123.46 2678.77 121.17 2679.12 119.52 2678.18C119.17 2677.98 118.55 2677.75 118.73 2677.38C118.91 2677.01 119.38 2677.5 119.72 2677.61C119.97 2677.68 120.21 2677.82 120.47 2677.89C121.75 2678.28 122.34 2677.86 122.31 2676.54C122.28 2674.76 123.09 2673.52 124.65 2672.74C125.92 2672.11 127.28 2671.68 128.64 2671.31C130.51 2670.8 131.76 2669.8 132.18 2667.79C132.41 2666.68 132.9 2665.62 133.45 2664.61C133.83 2663.9 134.36 2663.36 135.14 2663.08C136.89 2662.45 138.62 2661.76 140.52 2661.93C141.59 2662.03 142.5 2662.45 143.05 2663.44C143.22 2663.75 143.51 2663.85 143.81 2663.96C144.93 2664.36 146.04 2664.81 147.04 2665.48C147.86 2666.03 148.06 2666.62 147.69 2667.55C147.42 2668.23 147.08 2668.88 146.81 2669.56C146.16 2671.22 146.41 2672.16 147.75 2673.31C148.28 2673.76 148.27 2674.04 147.66 2674.43C147.28 2674.67 147.19 2675.02 147.01 2675.39C146.72 2675.94 146.75 2676.66 146.44 2677C145.99 2677.51 145.75 2677.99 145.6 2678.62C145.48 2679.15 144.99 2679.31 144.49 2679.14C143.84 2678.93 143.22 2678.64 142.58 2678.41C141.56 2678.03 141.26 2678.16 140.8 2679.13C140.09 2680.61 139.97 2681.99 141.08 2683.42C142.37 2685.1 143.15 2687.06 143.54 2689.15C143.57 2689.34 143.6 2689.54 143.6 2689.73C143.61 2690.69 143.09 2691.05 142.24 2690.65C141.64 2690.37 141.1 2690 140.52 2689.68C140.3 2689.55 140.12 2689.33 139.75 2689.33C140.36 2690.01 141.01 2690.54 141.77 2690.93C142.2 2691.16 142.66 2691.06 143.11 2690.91C146.29 2689.87 148.71 2687.82 150.75 2685.25C151.04 2684.89 151.22 2684.52 151.17 2684.04C151.09 2683.37 151.34 2682.75 151.43 2682.1C151.47 2681.84 151.53 2681.51 151.26 2681.36C151.03 2681.23 150.92 2681.57 150.73 2681.66C150.53 2681.75 150.34 2681.87 150.14 2681.92C149.82 2682 149.41 2682.2 149.19 2681.87C149.04 2681.62 149.46 2681.47 149.59 2681.25C150.07 2680.44 150.42 2679.55 151.35 2679.07C151.77 2678.86 152.1 2678.65 152.53 2679.02C152.66 2679.14 152.87 2679.29 152.99 2678.99C153.07 2678.78 152.97 2678.6 152.75 2678.54C152.56 2678.48 152.37 2678.44 152.18 2678.42C151.88 2678.4 151.6 2678.33 151.35 2678.16C151.08 2677.97 150.66 2677.77 150.74 2677.42C150.83 2677.06 151.28 2677.19 151.58 2677.17C152.36 2677.1 153.13 2677.06 153.91 2677C154.27 2676.98 154.64 2677.04 154.82 2677.36C155.22 2678.12 155.91 2678.21 156.61 2678.16C157.49 2678.11 157.97 2678.45 158.22 2679.29C158.44 2680.04 158.77 2680.75 159.03 2681.48C159.14 2681.78 159.21 2682.16 158.87 2682.34C158.58 2682.51 158.4 2682.2 158.22 2682.01C158.04 2681.83 157.87 2681.58 157.7 2682.01C157.21 2683.25 156.52 2684.41 156.27 2685.75C156.34 2685.73 156.39 2685.74 156.42 2685.71C157.23 2684.84 157.39 2684.86 157.95 2685.9C158.57 2687.03 159.17 2688.17 159.76 2689.33C159.99 2689.79 160.17 2689.92 160.57 2689.48C161.77 2688.17 163 2686.87 164.23 2685.59C164.53 2685.27 164.58 2684.97 164.48 2684.54C164.23 2683.54 164.01 2682.53 164.32 2681.51C164.55 2680.75 165.16 2680.56 165.7 2681.04C165.87 2681.19 166 2681.56 166.25 2681.38C166.42 2681.26 166.42 2680.9 166.47 2680.64C166.53 2680.34 166.33 2680.2 166.08 2680.11C165.46 2679.89 164.82 2679.75 164.16 2679.71C163.69 2679.68 163.23 2679.69 162.77 2679.64C161.98 2679.55 161.56 2679.09 161.63 2678.32C161.69 2677.55 161.25 2676.98 161.02 2676.33C160.8 2675.69 160.52 2675.17 159.84 2674.9C159.51 2674.77 159.57 2674.34 159.64 2674.04C159.75 2673.59 159.9 2673.15 160.06 2672.72C160.38 2671.86 160.39 2671.03 160.33 2670.1C160.25 2668.86 160.04 2667.9 158.89 2667.31C158.83 2667.28 158.79 2667.21 158.75 2667.15C158.49 2666.77 158.02 2666.42 158.05 2665.98C158.1 2665.36 158.79 2665.63 159.17 2665.42C160.17 2664.87 161.21 2664.38 162.22 2663.85C163.56 2663.15 164.9 2662.44 166.33 2661.94C169.07 2660.98 171.46 2661.55 173.56 2663.5C174.58 2664.45 175.42 2665.56 176.13 2666.76C176.63 2667.63 176.75 2668.53 176.46 2669.5C175.88 2671.46 175.09 2673.36 174.86 2675.42C174.82 2675.74 174.61 2675.92 174.29 2676C173.99 2676.08 173.66 2676.06 173.33 2676.28C174.59 2676.81 175.37 2677.76 175.94 2678.93C176.23 2679.53 176.76 2679.95 177.21 2680.44C179.43 2682.84 180.37 2685.6 180.1 2688.93C179.71 2693.8 178.08 2698.17 175.51 2702.26C173.96 2704.71 172.83 2707.29 172.87 2710.27C172.89 2711.63 173.17 2712.8 174.2 2713.89C176.2 2716 177.65 2718.48 178.3 2721.37C179.06 2724.76 178.2 2727.74 175.95 2730.33C175.25 2731.14 174.48 2731.9 173.71 2732.64C173.3 2733.04 173.34 2733.28 173.79 2733.61C174.52 2734.14 175.15 2734.79 175.73 2735.49C176.87 2736.85 177.4 2738.43 177.41 2740.2C177.41 2741.71 177.27 2743.22 177.51 2744.73C177.85 2746.86 178.74 2748.72 180.22 2750.29C182.21 2752.41 184.08 2754.61 185.21 2757.35C185.8 2758.79 186.11 2760.29 186.26 2761.82C186.41 2763.43 187.05 2764.81 187.88 2766.15C188.76 2767.56 189.6 2768.98 190.46 2770.4C191.11 2771.46 191.51 2772.59 191.43 2773.86C191.38 2774.6 191.62 2775.31 191.78 2776.02C192.5 2779.27 193.51 2782.41 195.12 2785.34C195.42 2785.9 195.68 2786.45 195.36 2787.14C195.2 2787.5 195.52 2787.93 195.64 2788.32C196.34 2790.69 196.34 2790.71 194.04 2791.64C193.16 2791.99 192.27 2792.32 191.38 2792.65C190.98 2792.8 190.52 2792.81 190.33 2792.42C190.09 2791.93 189.83 2792.07 189.46 2792.19C188.34 2792.54 187.51 2793.25 186.82 2794.17C186.5 2794.59 186.15 2795.01 185.79 2795.4C184.3 2797.06 182.45 2797.78 180.22 2797.48C178.87 2797.29 177.55 2796.95 176.24 2796.56C175.92 2796.47 175.55 2796.35 175.49 2795.95C175.43 2795.55 175.77 2795.34 176.04 2795.15C177.1 2794.41 178.31 2793.92 179.44 2793.31C182.23 2791.79 183.45 2788.84 182.35 2785.84C181.67 2783.97 181.06 2782.07 180.19 2780.26C179.53 2778.87 179.48 2777.28 179.25 2775.77C179.02 2774.32 178.62 2773.01 177.78 2771.78C176.3 2769.63 174.99 2767.37 173.5 2765.23C171.82 2762.81 170.53 2760.23 169.52 2757.45C168.2 2753.84 166.69 2750.29 164.42 2747.13C163.56 2745.94 162.5 2745 160.96 2744.6C161.01 2744.95 161.23 2745.15 161.38 2745.37C163.3 2748.04 164.41 2750.97 164.21 2754.31C164.18 2754.95 164.13 2755.6 163.8 2756.15C163.22 2757.12 163.3 2758.15 163.41 2759.2C163.98 2764.38 164.73 2769.55 164.47 2774.78C164.37 2776.83 164.3 2778.89 164.76 2780.89C165.78 2785.29 167.92 2789.1 171.07 2792.34C171.6 2792.88 172.17 2793.37 172.6 2794.01C172.69 2794.15 172.8 2794.3 172.71 2794.48C172.63 2794.65 172.47 2794.6 172.32 2794.58C170.39 2794.34 168.45 2794.24 166.57 2793.61C165.88 2793.38 165.38 2793.04 165 2792.42C164.28 2791.24 163.31 2790.35 161.93 2789.98C160.8 2789.67 160.17 2790.2 160.32 2791.37C160.41 2792 160.56 2792.61 160.79 2793.21C160.87 2793.42 160.95 2793.67 160.67 2793.77C160.28 2793.9 159.87 2794.11 159.47 2793.94C159.22 2793.84 159.41 2793.54 159.47 2793.35C159.94 2791.9 159.87 2790.47 159.35 2789.05C159.16 2788.52 159.01 2787.98 158.86 2787.44C158.56 2786.39 158.56 2785.3 159.09 2784.38C160.72 2781.58 160.43 2778.74 159.47 2775.84C158.43 2772.65 157.39 2769.45 156.34 2766.26C155.37 2763.33 155.08 2760.38 155.76 2757.33C156.28 2754.97 154.99 2753.27 153.46 2751.71C153.29 2751.55 153.07 2751.54 152.84 2751.54C151.55 2751.5 150.26 2751.46 148.97 2751.41C148.57 2751.4 148.27 2751.49 148.11 2751.91C146.33 2756.6 143.18 2760.47 140.42 2764.56C137.92 2768.28 135.21 2771.86 132.96 2775.75C131.88 2777.63 131.23 2779.67 130.58 2781.72C129.79 2784.2 129.08 2786.71 128.23 2789.17C127.79 2790.44 128.11 2791.63 128.34 2792.83C128.49 2793.62 128.74 2794.39 128.93 2795.17C128.99 2795.4 129.05 2795.7 128.83 2795.85C128.57 2796.04 128.4 2795.76 128.22 2795.61C126.62 2794.25 125.03 2792.89 124.15 2790.89C123.9 2790.31 123.83 2789.85 124.09 2789.25C124.88 2787.38 124.75 2785.58 123.41 2783.98C122.85 2783.31 122.72 2783.34 122.4 2784.12C121.99 2785.13 121.61 2786.16 121.24 2787.19C120.98 2787.88 120.93 2787.9 120.38 2787.38C120.3 2787.3 120.21 2787.21 120.12 2787.13C119.72 2786.72 119.76 2786.38 120.24 2786.11C120.86 2785.76 121.15 2785.16 121.41 2784.56C121.67 2783.93 121.89 2783.28 122.06 2782.62C122.68 2780.06 124.46 2778.69 126.85 2777.99C127.42 2777.82 127.67 2777.56 127.79 2776.98C128.57 2773.18 129.6 2769.45 131.01 2765.83C132.61 2761.72 135.02 2758.21 138.48 2755.45C139.64 2754.52 140.07 2753.08 140.88 2751.9C141.05 2751.65 140.87 2751.54 140.63 2751.54C139.44 2751.55 138.24 2751.54 137.05 2751.6C136.56 2751.63 136.18 2752.02 135.78 2752.3C133.94 2753.59 132.34 2755.16 130.72 2756.71C128.7 2758.66 126.69 2760.61 124.5 2762.36C123.36 2763.27 122.05 2763.76 120.63 2763.96C120.39 2763.99 120.14 2763.99 119.9 2763.93C119.31 2763.8 119.13 2763.35 119.44 2762.83C119.52 2762.7 119.62 2762.6 119.72 2762.49C120.73 2761.39 120.67 2760.93 119.38 2760.1C118.38 2759.45 117.68 2758.58 117.24 2757.48C116.9 2756.62 117.06 2756.37 118 2756.27C118.1 2756.26 118.19 2756.23 118.46 2756.17L118.48 2756.16M150.1 2695.36C150.08 2695.9 150.25 2696.39 150.41 2696.87C150.71 2697.76 150.65 2698.61 150.34 2699.51C149.12 2703.06 149.59 2706.3 152.21 2709.13C154.17 2711.26 155.49 2713.7 155.81 2716.64C156.07 2719.01 155.84 2721.35 155.29 2723.66C154.92 2725.17 154.99 2726.65 155.44 2728.13C155.67 2728.86 155.85 2729 156.44 2728.5C157.77 2727.38 159.04 2726.24 159.05 2724.22C159.09 2717.21 158.77 2710.19 159.78 2703.21C159.84 2702.79 159.71 2702.46 159.4 2702.17C158.81 2701.62 158.18 2701.11 157.72 2700.44C157.58 2700.24 157.38 2700.17 157.14 2700.23C155.26 2700.75 153.55 2700.04 151.82 2699.46C151.31 2699.29 151.03 2698.99 150.96 2698.42C150.84 2697.35 150.55 2696.33 150.1 2695.36L150.1 2695.36M153.23 2688.47C152.96 2688.46 152.75 2688.54 152.58 2688.75C151.75 2689.83 150.9 2690.89 150.09 2691.98C149.63 2692.59 149.71 2692.79 150.4 2693.03C151.69 2693.47 152.98 2693.9 154.26 2694.35C154.68 2694.5 154.91 2694.43 154.77 2693.96C154.29 2692.32 154.1 2690.63 153.8 2688.96C153.73 2688.61 153.57 2688.45 153.23 2688.47L153.23 2688.47M162.08 2692.24C165.19 2689.62 167.47 2686.26 170.31 2683.41C168.86 2684.57 167.32 2685.58 165.81 2686.65C165.06 2687.18 164.5 2687.88 164.08 2688.69C163.44 2689.89 162.81 2691.09 162.08 2692.24L162.08 2692.24M127.42 2673.22C125.74 2673.54 124.5 2674.38 123.86 2675.98C123.75 2676.27 123.57 2676.67 123.84 2676.86C124.1 2677.03 124.36 2676.68 124.56 2676.49C125.65 2675.53 126.39 2674.25 127.42 2673.22L127.42 2673.22M144 2665.83C142.27 2667.01 141.06 2668.85 139.05 2669.66C141.22 2669.06 143.1 2668.07 144 2665.83M139.52 2686.37C139.72 2683.71 138.4 2681.35 136.49 2681.08C138.38 2682.39 138.69 2684.48 139.52 2686.37"/><path fill-rule="nonzero" d="M101.78 2707.62C101.92 2707.69 102.06 2707.72 102.21 2707.72C102.61 2707.72 103 2707.48 103.17 2707.09C106.03 2700.67 110.5 2693.73 116.44 2686.46C116.81 2686 116.74 2685.34 116.29 2684.97C115.84 2684.6 115.17 2684.67 114.8 2685.12C108.74 2692.54 104.18 2699.64 101.24 2706.23C101 2706.76 101.24 2707.39 101.78 2707.62"/><path fill-rule="nonzero" d="M75.05 2786.58C74.78 2786.07 74.15 2785.87 73.64 2786.14C73.12 2786.4 72.91 2787.04 73.18 2787.56C73.27 2787.75 75.7 2792.24 89.02 2797.64C97.41 2801.05 102.45 2801.7 105.07 2801.7C106.62 2801.7 107.33 2801.47 107.4 2801.45C107.95 2801.26 108.24 2800.68 108.06 2800.13C107.89 2799.58 107.3 2799.27 106.75 2799.44C106.7 2799.46 102.2 2800.71 89.81 2795.68C77.52 2790.69 75.11 2786.68 75.05 2786.58"/><path fill-rule="nonzero" d="M223.37 2778.1C219.14 2780.08 213.79 2781.9 209.41 2782.84C203.71 2784.07 201.97 2783.36 201.8 2783.02C201.43 2782.23 204.89 2779.81 206.95 2778.37C212.15 2774.72 218.63 2770.18 215.97 2764.51L200.52 2731.57C199.46 2729.3 197.18 2728 195.11 2727.27C195.92 2726.97 196.59 2726.68 197.05 2726.46L198.77 2725.66L200.49 2724.85C200.95 2724.63 201.6 2724.3 202.35 2723.87C201.6 2725.93 201.14 2728.52 202.2 2730.79L217.64 2763.72C220.3 2769.39 227.94 2767.32 234.07 2765.65C236.5 2764.99 240.57 2763.88 240.94 2764.66C241.67 2766.23 233.26 2773.46 223.37 2778.1M174.22 2723.86C162.94 2717.35 155.78 2700.61 153.44 2675.46C157.84 2675.42 167.53 2671.14 172.18 2668.96C177.12 2666.64 181.65 2664.2 184.93 2662.09C187.15 2660.67 188.48 2659.61 189.23 2658.77C207.02 2676.63 215.29 2692.81 213.09 2705.63C211.19 2716.71 202.28 2721.68 199.59 2722.94L197.87 2723.74L196.16 2724.55C193.47 2725.81 183.95 2729.48 174.22 2723.86M134.91 2741.63C125.49 2747.76 115.79 2744.6 113.04 2743.48L111.28 2742.77L109.53 2742.05C106.78 2740.94 97.62 2736.45 95.13 2725.48C92.25 2712.8 99.65 2696.2 116.47 2677.43C117.26 2678.22 118.64 2679.21 120.94 2680.52C124.33 2682.45 128.98 2684.64 134.04 2686.69C139.09 2688.75 143.96 2690.41 147.74 2691.39C150.19 2692.02 151.84 2692.29 152.95 2692.29C153.01 2692.29 153.04 2692.28 153.09 2692.28C152.08 2717.47 145.81 2734.53 134.91 2741.63M109.05 2750.73L95.38 2784.43C93.02 2790.24 99.73 2794.43 105.12 2797.79C107.25 2799.13 110.83 2801.36 110.51 2802.17C110.36 2802.52 108.66 2803.32 102.9 2802.39C98.47 2801.68 93.04 2800.15 88.71 2798.4C84.39 2796.64 79.42 2793.95 75.75 2791.38C70.98 2788.03 70.31 2786.27 70.45 2785.91C70.78 2785.11 74.9 2786 77.36 2786.53C83.58 2787.87 91.31 2789.54 93.66 2783.74L107.34 2750.03C108.28 2747.71 107.68 2745.15 106.82 2743.13C107.59 2743.52 108.26 2743.82 108.73 2744.01L110.49 2744.73L112.25 2745.44C112.72 2745.63 113.41 2745.88 114.23 2746.14C112.21 2746.98 110 2748.4 109.05 2750.73M136.07 2681.7C144.95 2685.3 150.8 2688.6 152.63 2690.19C150.21 2690.05 143.72 2688.34 134.83 2684.74C125.95 2681.13 120.1 2677.83 118.26 2676.24C120.68 2676.38 127.18 2678.09 136.07 2681.7M169.89 2664.07C178.57 2660 184.97 2657.95 187.37 2657.68C185.63 2659.36 179.97 2662.97 171.28 2667.04C162.6 2671.12 156.2 2673.17 153.8 2673.43C155.54 2671.75 161.21 2668.15 169.89 2664.07M242.85 2763.77C241.73 2761.38 238.1 2762.36 233.51 2763.61C228.14 2765.07 221.46 2766.89 219.56 2762.82L204.11 2729.89C202.61 2726.68 205.48 2722.09 205.92 2721.42C209.64 2718.44 213.88 2713.51 215.17 2705.98C217.56 2692.03 209.02 2675.32 189.77 2656.32C189.17 2655.36 187.56 2655.12 182.42 2656.74C178.7 2657.92 173.93 2659.84 168.99 2662.16C164.05 2664.48 159.52 2666.91 156.24 2669.02C151.7 2671.94 150.86 2673.33 151.21 2674.4C151.62 2679.16 152.19 2683.61 152.91 2687.76C152.16 2687.23 151.19 2686.62 149.96 2685.92C146.57 2683.98 141.91 2681.79 136.86 2679.74C131.22 2677.45 118.37 2672.6 116.01 2674.81C115.97 2674.84 115.93 2674.85 115.9 2674.89C97.61 2694.94 89.93 2712.12 93.07 2725.95C94.76 2733.39 99.25 2738.09 103.12 2740.88C104.2 2742.3 106.55 2746.35 105.38 2749.23L91.7 2782.94C90.02 2787.1 83.25 2785.64 77.81 2784.47C73.16 2783.46 69.49 2782.67 68.5 2785.12C67.7 2787.08 69.67 2789.7 74.54 2793.11C78.33 2795.77 83.45 2798.54 87.92 2800.36C92.38 2802.17 97.99 2803.75 102.56 2804.48C104.47 2804.79 106.11 2804.94 107.47 2804.94C110.28 2804.94 111.93 2804.28 112.46 2802.96C113.46 2800.51 110.27 2798.52 106.24 2796C101.52 2793.05 95.65 2789.39 97.33 2785.23L111.01 2751.52C112.36 2748.2 117.78 2747.21 118.48 2747.09C119.72 2747.28 121.06 2747.4 122.51 2747.4C126.58 2747.4 131.35 2746.47 136.07 2743.4C147.01 2736.28 153.34 2720.72 154.95 2697.14C158.71 2711.28 164.8 2720.86 173.16 2725.69C177.49 2728.19 181.77 2729.01 185.53 2729.01C187.5 2729.01 189.32 2728.78 190.93 2728.45C192.68 2728.62 197.28 2729.63 198.61 2732.47L214.06 2765.4C215.96 2769.47 210.29 2773.44 205.74 2776.64C201.84 2779.37 198.77 2781.52 199.89 2783.91C200.43 2785.07 201.84 2785.65 204.15 2785.65C205.66 2785.65 207.56 2785.4 209.86 2784.91C214.38 2783.93 219.9 2782.06 224.26 2780.01C231.52 2776.61 244.87 2768.07 242.85 2763.77"/><path fill-rule="nonzero" d="M205.04 2688.17C205.22 2688.54 205.6 2688.75 205.98 2688.75C206.14 2688.75 206.3 2688.72 206.46 2688.64C206.98 2688.38 207.19 2687.75 206.93 2687.23C203.55 2680.47 198.34 2673.25 191.44 2665.75C191.04 2665.32 190.37 2665.3 189.95 2665.69C189.52 2666.09 189.49 2666.76 189.88 2667.18C196.65 2674.53 201.75 2681.59 205.04 2688.17"/><path fill-rule="nonzero" d="M237.78 2765.07C237.26 2764.83 236.64 2765.06 236.38 2765.57C236.36 2765.61 234.22 2769.77 222.12 2775.45C210.02 2781.12 205.46 2780.11 205.43 2780.1C204.87 2779.95 204.28 2780.27 204.13 2780.83C203.97 2781.4 204.3 2781.98 204.86 2782.14C204.92 2782.15 205.42 2782.28 206.46 2782.28C208.82 2782.28 213.96 2781.61 223.02 2777.36C236.04 2771.25 238.22 2766.65 238.3 2766.45C238.54 2765.93 238.31 2765.32 237.78 2765.07"/><path fill-rule="nonzero" d="M178 2719.93C169.22 2715.8 164.12 2705.59 162.1 2700.67C168.25 2702.68 181.75 2702.82 185.09 2702.82C188.64 2702.82 203.76 2702.67 209.2 2700.25C209.27 2704.39 208.09 2714.55 195.46 2719.76C189.15 2722.36 183.28 2722.42 178 2719.93M185.09 2695.8C198.03 2695.8 206.77 2697.17 208.76 2698.25C206.77 2699.33 198.03 2700.7 185.09 2700.7C172.14 2700.7 163.4 2699.33 161.41 2698.25C163.4 2697.17 172.14 2695.8 185.09 2695.8M211.14 2698.07C211.14 2698.05 211.13 2698.03 211.12 2698.01C210.34 2693.9 189.36 2693.69 185.09 2693.69C180.8 2693.69 159.67 2693.9 159.04 2698.06C159.03 2698.11 159.03 2698.15 159.02 2698.19C159.02 2698.21 159.01 2698.23 159.01 2698.25C159.01 2698.34 159.04 2698.43 159.06 2698.52C159.06 2698.53 159.06 2698.55 159.06 2698.56C159.06 2698.57 159.06 2698.58 159.07 2698.58C159.08 2698.62 159.09 2698.67 159.11 2698.71C159.67 2700.47 164.99 2716.13 177.09 2721.84C179.97 2723.2 182.99 2723.87 186.14 2723.87C189.38 2723.87 192.77 2723.15 196.26 2721.71C213.82 2714.47 211.17 2698.23 211.14 2698.07"/><path fill-rule="nonzero" d="M122.83 2719C109.76 2720.12 100.82 2719.51 98.69 2718.6C100.63 2717.34 109.34 2715.23 122.42 2714.12C135.48 2713 144.43 2713.61 146.55 2714.52C144.61 2715.78 135.9 2717.89 122.83 2719M129.61 2739.14C124.68 2741.58 119.18 2741.6 113.28 2739.17C101.61 2734.37 99.09 2724.92 98.55 2720.76C99.83 2721.14 101.82 2721.45 104.91 2721.61C106.36 2721.69 107.96 2721.72 109.66 2721.72C113.66 2721.72 118.24 2721.52 123.01 2721.11C126.36 2720.82 139.86 2719.54 145.95 2717.04C143.99 2722.58 138.83 2734.56 129.61 2739.14M148.92 2714.18C148.07 2710.03 126.58 2711.64 122.24 2712.01C115.44 2712.59 109.07 2713.5 104.31 2714.58C97.31 2716.16 96.25 2717.49 96.29 2718.69C96.29 2718.69 96.29 2718.69 96.29 2718.7C96.29 2718.85 96.2 2734.44 112.48 2741.12C115.68 2742.44 118.79 2743.1 121.78 2743.1C124.83 2743.1 127.77 2742.41 130.55 2741.03C143.11 2734.79 148.36 2716.72 148.88 2714.82C148.93 2714.65 148.97 2714.49 148.95 2714.32L148.95 2714.32C148.95 2714.32 148.95 2714.32 148.95 2714.32C148.95 2714.31 148.94 2714.3 148.94 2714.29C148.94 2714.25 148.92 2714.21 148.92 2714.18"/></symbol>
+</svg>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-veil"></div>
+    <div class="hero-frame"></div>
+    <div class="hero-content">
+      <div class="hero-seal"><img class="cr" src="corona.webp" alt=""><b>VRM</b></div>
+      <span class="hero-tag">Mis XV Años</span>
+      <span class="hero-name">Vanessa</span>
+      <span class="hero-name">Aileen</span>
+      <span class="hero-date">Sábado · 16 de Enero · 2027</span>
+      <span class="hero-city">Tultitlán, Estado de México</span>
+    </div>
+    <div class="scroll-hint" id="scrollHint">
+      <span class="scroll-hint-txt">Desliza</span>
+      <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- INTRO AURORA -->
+  <section class="sec intro">
+    <img class="rosa-esq tl" src="rosas-ramo.webp" alt="">
+    <img class="rosa-esq br" src="rosas-ramo.webp" alt="">
+    <div style="position:relative;z-index:2">
+      <div class="rv">
+        <span class="eyebrow">Érase una vez</span>
+        <div class="orn"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+        <h1 class="heading metal">Vanessa Aileen</h1>
+        <p class="txt">Como en los cuentos que leía de niña, llega el capítulo que tanto soñé. Las hadas ya preparan su magia, el castillo enciende sus luces y yo quiero que tú seas parte de esta historia.</p>
+        <div class="firma">Vanessa Aileen</div>
+      </div>
+      <div class="rueca-wrap rv" id="rueca"><img class="rueca" src="rueca.webp" alt="" loading="lazy"></div>
+      <div class="vuelo rv">
+        <img class="hada f" src="flora.webp" alt="" loading="lazy">
+        <img class="hada a" src="fauna.webp" alt="" loading="lazy">
+        <img class="hada p" src="primavera.webp" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCO DE FOTOS -->
+  <section class="sec retrato">
+    <div class="rv">
+      <span class="eyebrow">La quinceañera</span>
+      <div class="arco"><img class="ft on" src="vanessa-1.webp" alt="Vanessa Aileen, foto 1" decoding="async"><img class="ft" src="vanessa-2.webp" alt="Vanessa Aileen, foto 2" decoding="async" loading="lazy"><img class="ft" src="vanessa-3.webp" alt="Vanessa Aileen, foto 3" decoding="async" loading="lazy"><img class="ft" src="vanessa-4.webp" alt="Vanessa Aileen, foto 4" decoding="async" loading="lazy"><img class="ft" src="vanessa-5.webp" alt="Vanessa Aileen, foto 5" decoding="async" loading="lazy"><img class="ft" src="vanessa-6.webp" alt="Vanessa Aileen, foto 6" decoding="async" loading="lazy"><img class="ft" src="vanessa-7.webp" alt="Vanessa Aileen, foto 7" decoding="async" loading="lazy"><img class="ft" src="vanessa-8.webp" alt="Vanessa Aileen, foto 8" decoding="async" loading="lazy"><img class="ft" src="vanessa-9.webp" alt="Vanessa Aileen, foto 9" decoding="async" loading="lazy"><img class="ft" src="vanessa-10.webp" alt="Vanessa Aileen, foto 10" decoding="async" loading="lazy"><img class="ft" src="vanessa-11.webp" alt="Vanessa Aileen, foto 11" decoding="async" loading="lazy"><img class="ft" src="vanessa-12.webp" alt="Vanessa Aileen, foto 12" decoding="async" loading="lazy"><img class="ft" src="vanessa-13.webp" alt="Vanessa Aileen, foto 13" decoding="async" loading="lazy"><img class="ft" src="vanessa-14.webp" alt="Vanessa Aileen, foto 14" decoding="async" loading="lazy"><img class="ft" src="vanessa-15.webp" alt="Vanessa Aileen, foto 15" decoding="async" loading="lazy"><img class="ft" src="vanessa-16.webp" alt="Vanessa Aileen, foto 16" decoding="async" loading="lazy"></div>
+      <div class="arco-name">Vanessa Aileen</div>
+    </div>
+  </section>
+
+  <!-- FAMILIA -->
+  <section class="sec-sm" style="background:var(--bg)">
+    <div class="rv">
+      <span class="eyebrow">Con la bendición de Dios y de nuestros padres</span>
+      <div class="fam-box">
+        <span class="fam-lbl">Mis padres</span>
+        <span class="fam-name">Adrián de la Rosa</span>
+        <span class="fam-and">y</span>
+        <span class="fam-name">Adriana Mercado</span>
+      </div>
+      <div class="fam-box">
+        <span class="fam-lbl">Mis padrinos</span>
+        <span class="fam-name">Luis Alberto de la Rosa</span>
+        <span class="fam-and">y</span>
+        <span class="fam-name">Viridiana Mercado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUENTA REGRESIVA -->
+  <section class="cd" style="text-align:center">
+    <div class="rv">
+      <span class="eyebrow">El hechizo se cumple en</span>
+      <h2>Cuenta regresiva</h2>
+      <p class="cd-sub">hasta mi gran día</p>
+    </div>
+    <div class="cd-ring-grid rv">
+      <div class="cd-ring-item" id="cdItemD"><svg class="cd-ring-svg" viewBox="0 0 120 120" aria-hidden="true"><circle class="cd-ring-track" cx="60" cy="60" r="52"/><circle class="cd-ring-prog" cx="60" cy="60" r="52" id="ringD"/></svg><div class="cd-rotor" aria-hidden="true"><span class="cd-dot"></span></div><div class="cd-ripple"></div><div class="cd-ring-center"><span class="cd-num" id="cdD">000</span><span class="cd-ring-lbl">Días</span></div></div>
+      <div class="cd-ring-item" id="cdItemH"><svg class="cd-ring-svg" viewBox="0 0 120 120" aria-hidden="true"><circle class="cd-ring-track" cx="60" cy="60" r="52"/><circle class="cd-ring-prog" cx="60" cy="60" r="52" id="ringH"/></svg><div class="cd-rotor cd-rotor-mid" aria-hidden="true"><span class="cd-dot"></span></div><div class="cd-ripple"></div><div class="cd-ring-center"><span class="cd-num" id="cdH">00</span><span class="cd-ring-lbl">Horas</span></div></div>
+      <div class="cd-ring-item" id="cdItemM"><svg class="cd-ring-svg" viewBox="0 0 120 120" aria-hidden="true"><circle class="cd-ring-track" cx="60" cy="60" r="52"/><circle class="cd-ring-prog" cx="60" cy="60" r="52" id="ringM"/></svg><div class="cd-rotor cd-rotor-rev" aria-hidden="true"><span class="cd-dot"></span></div><div class="cd-ripple"></div><div class="cd-ring-center"><span class="cd-num" id="cdM">00</span><span class="cd-ring-lbl">Minutos</span></div></div>
+      <div class="cd-ring-item" id="cdItemS"><svg class="cd-ring-svg" viewBox="0 0 120 120" aria-hidden="true"><circle class="cd-ring-track" cx="60" cy="60" r="52"/><circle class="cd-ring-prog" cx="60" cy="60" r="52" id="ringS"/></svg><div class="cd-rotor cd-rotor-fast" aria-hidden="true"><span class="cd-dot"></span></div><div class="cd-ripple"></div><div class="cd-ring-center"><span class="cd-num" id="cdS">00</span><span class="cd-ring-lbl">Segundos</span></div></div>
+    </div>
+  </section>
+
+  <!-- UBICACIONES -->
+  <section class="sec locs">
+    <div class="rv">
+      <span class="eyebrow">Dónde celebramos</span>
+      <h2 class="heading-sm">Mis XV Años</h2>
+      <p class="sub" style="margin-top:6px">Sábado 16 de enero de 2027</p>
+    </div>
+    <div class="loc-card rv">
+      <span class="lev"><svg class="loc-ic" viewBox="0 0 141.22 124.74" aria-hidden="true"><use href="#ic-church"/></svg></span>
+      <div class="loc-ttl">Misa de XV Años</div>
+      <div class="loc-time">3:50 p.m.</div>
+      <div class="loc-venue">Finca Maldonado</div>
+      <div class="loc-addr">C. 29 Manzana 5 Lote 11, San Blas Uno, Cuautitlán, Estado de México</div>
+      <a class="btn-map" href="https://maps.app.goo.gl/gpFS89zdYJkSSEkK8?g_st=ic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Ver mapa</a>
+    </div>
+    <div class="loc-card rv">
+      <span class="lev"><svg class="loc-ic couple" viewBox="0 0 177.17 149.82" aria-hidden="true"><use href="#ic-couple"/></svg></span>
+      <div class="loc-ttl">Recepción</div>
+      <div class="loc-time">4:30 p.m.</div>
+      <div class="loc-venue">Finca Maldonado</div>
+      <div class="loc-addr">C. 29 Manzana 5 Lote 11, San Blas Uno, Cuautitlán, Estado de México</div>
+      <a class="btn-map" href="https://maps.app.goo.gl/gpFS89zdYJkSSEkK8?g_st=ic" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Ver mapa</a>
+    </div>
+    <div class="rv">
+      <a class="btn-cal" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mis+XV+A%C3%B1os+-+Vanessa+Aileen&dates=20270116T215000Z/20270117T050000Z&details=Misa+3%3A50+PM+%7C+Recepci%C3%B3n+4%3A30+PM&location=Finca+Maldonado%2C+Cuautitl%C3%A1n%2C+Estado+de+M%C3%A9xico" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5C3.89 4 3 4.9 3 6v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v10zM7 11h5v5H7z"/></svg>Guardar en calendario</a>
+    </div>
+  </section>
+
+  <!-- ITINERARIO -->
+  <section class="sec itin">
+    <div class="rv">
+      <span class="eyebrow">Programa del día</span>
+      <h2 class="heading-sm">Itinerario</h2>
+      <div class="orn" style="margin-top:16px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    </div>
+    <div class="itin-list">
+      <div class="itin-item rv"><div class="itin-dot"></div><div class="itin-time">3:15 p.m.</div><div class="itin-ev">Ceremonia religiosa</div></div>
+      <div class="itin-item rv"><div class="itin-dot"></div><div class="itin-time">4:30 p.m.</div><div class="itin-ev">Recepción</div></div>
+      <div class="itin-item rv"><div class="itin-dot"></div><div class="itin-time">5:00 p.m.</div><div class="itin-ev">Mariachi</div></div>
+      <div class="itin-item rv"><div class="itin-dot"></div><div class="itin-time">6:00 p.m.</div><div class="itin-ev">Cena</div></div>
+      <div class="itin-item rv"><div class="itin-dot"></div><div class="itin-time">8:00 p.m.</div><div class="itin-ev">Baile sorpresa</div></div>
+      <div class="itin-item rv"><div class="itin-dot"></div><div class="itin-time">10:00 p.m.</div><div class="itin-ev">Pastel</div></div>
+    </div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section class="sec dress">
+    <div class="rv">
+      <span class="eyebrow">Código de vestimenta</span>
+      <h2 class="heading-sm">Formal</h2>
+      <div class="orn" style="margin-top:16px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+      <p class="dc-text">Te invitamos a vestir elegante<br>para esta noche de cuento.</p>
+    </div>
+    <div class="dc-cols rv">
+      <div class="dc-col">
+        <svg viewBox="0 0 64 80" width="64" height="80" fill="none"><circle cx="32" cy="12" r="9" stroke="#B76E79" stroke-width="1.5"/><path d="M22 21L32 27L42 21" stroke="#B76E79" stroke-width="1.3" stroke-linecap="round"/><path d="M32 27L30 38L32 43L34 38Z" fill="rgba(183,110,121,.25)" stroke="#8a4552" stroke-width="1.1"/><path d="M22 21L14 36L16 58L32 54" stroke="#4e2430" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 21L50 36L48 58L32 54" stroke="#4e2430" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 58L18 78M48 58L46 78" stroke="#4e2430" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="dc-col-ttl">Caballeros</div>
+      </div>
+      <div class="dc-col">
+        <svg viewBox="0 0 64 80" width="64" height="80" fill="none"><circle cx="32" cy="11" r="9" stroke="#B76E79" stroke-width="1.5"/><path d="M23 8 Q26 2 32 3 Q38 2 41 8" stroke="#B76E79" stroke-width="1.3" fill="rgba(183,110,121,.14)" stroke-linecap="round"/><path d="M23 22Q20 28 20 34L16 58L48 58L44 34Q44 28 41 22Z" fill="rgba(183,110,121,.12)" stroke="#8a4552" stroke-width="1.3" stroke-linejoin="round"/><path d="M16 58Q12 72 32 76Q52 72 48 58Z" fill="rgba(183,110,121,.18)" stroke="#8a4552" stroke-width="1.3"/></svg>
+        <div class="dc-col-ttl">Damas</div>
+      </div>
+    </div>
+    <div class="rv">
+      <span class="dc-avoid-lbl">Evita estos colores</span>
+      <div class="dc-avoid-row">
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#ee719e"></div><span class="dc-avoid-name">Rosa fuerte</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#ffc3c2"></div><span class="dc-avoid-name">Rosa durazno</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#f9d3e0"></div><span class="dc-avoid-name">Rosa pastel</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#e63b7a"></div><span class="dc-avoid-name">Fucsia</span></div>
+        <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#c2c2c2"></div><span class="dc-avoid-name">Gris</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA — RUEDA 3D -->
+  <section id="galeria" aria-label="Galería de fotos">
+    <div class="rv">
+      <span class="eyebrow">Mi sesión de fotos</span>
+      <h2 class="heading">Momentos de cuento</h2>
+      <div class="gal-orn"></div>
+    </div>
+    <div class="wheel-scene rv" id="wheel-scene"><div class="wheel-ring" id="wheel-ring"><div class="wheel-card"><img src="vanessa-1.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-3.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-5.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-7.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-9.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-11.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-13.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-15.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-2.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-6.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-10.webp" alt="Vanessa Aileen" loading="lazy"></div><div class="wheel-card"><img src="vanessa-14.webp" alt="Vanessa Aileen" loading="lazy"></div></div></div>
+    <p class="gal-hint rv">Arrastra para girar</p>
+  </section>
+
+  <!-- MESA DE REGALOS -->
+  <section id="regalos" class="sec">
+    <div class="rv">
+      <span class="eyebrow">Mesa de regalos</span>
+      <h2 class="heading">Un obsequio</h2>
+      <div class="orn" style="margin-top:16px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+      <p class="gift-msg">Tu presencia es mi mejor regalo.<br>Cualquier detalle que quieras darme<br>lo recibiré con todo mi cariño.</p>
+    </div>
+    <div class="gift-opts rv">
+      <div class="gift-opt">
+        <svg class="gift-ic" viewBox="0 0 91.45 102.89" fill="currentColor" aria-hidden="true"><use href="#ic-gift"/></svg>
+        <span class="gift-bank-lbl">Mesa de regalos</span>
+        <span class="gift-bank-name">Liverpool</span>
+        <div class="gift-detail">Número de evento<br><b>60057412</b></div>
+        <a class="btn-gift" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/60057412" target="_blank" rel="noopener">Ver mesa de regalos</a>
+      </div>
+    </div>
+  </section>
+
+    <section id="rsvp-section" class="rv">
+    <div class="rsvp-card">
+      <svg class="rsvp-corner rsvp-corner--tl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+      <svg class="rsvp-corner rsvp-corner--tr" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+      <svg class="rsvp-corner rsvp-corner--bl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+      <svg class="rsvp-corner rsvp-corner--br" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+
+      <div class="rsvp-inner" id="rsvpCard">
+        <svg class="rsvp-ornament" viewBox="0 0 320 56" fill="none" aria-hidden="true">
+          <g stroke="var(--gold)" stroke-width=".9" opacity=".8" fill="none">
+            <path d="M18 28 Q50 10 82 28 Q106 42 130 28"/>
+            <path d="M190 28 Q214 42 238 28 Q270 10 302 28"/>
+            <circle cx="160" cy="28" r="5.5"/>
+            <circle cx="160" cy="28" r="2" fill="var(--gold)" stroke="none"/>
+            <path d="M148 28 L154 28" opacity=".5"/>
+            <path d="M166 28 L172 28" opacity=".5"/>
+            <path d="M154 20 Q160 13 166 20" opacity=".55"/>
+            <path d="M154 36 Q160 43 166 36" opacity=".55"/>
+          </g>
+        </svg>
+
+        <span class="eyebrow">Confirmación</span>
+        <h2 class="rsvp-title">¿Nos <em>acompañas</em>?</h2>
+        <p class="rsvp-text">Confirma tu asistencia para que podamos preparar todo con mucho cariño para mis XV años.</p>
+
+        <div class="rsvp-divider">
+          <svg class="rsvp-divider-heart" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+        </div>
+
+        <p id="rsvpPasesNote"></p>
+
+        <div class="rsvp-pases-display" id="rsvp-pases-display">
+          <div class="rsvp-pases-label">Pases reservados</div>
+          <div class="rsvp-pases-num" id="rsvp-pases-num">1</div>
+        </div>
+
+        <div class="rsvp-asignados" id="rsvp-asignados" style="display:none"></div>
+
+        <div class="rsvp-toggle" id="rsvp-toggle-std">
+          <button class="rsvp-toggle-btn" id="btnYes" type="button" onclick="selectRsvp('yes')">¡Con mucho gusto!</button>
+          <button class="rsvp-toggle-btn" id="btnNo" type="button" onclick="selectRsvp('no')">No podré asistir</button>
+        </div>
+
+        <div class="rsvp-fields" id="namesContainer"></div>
+
+        <button class="rsvp-btn" id="btnEnviar" type="button" onclick="sendRsvp()">
+          <span id="rsvp-btn-text">Confirmar asistencia</span>
+        </button>
+
+        <p id="rsvp-feedback"></p>
+
+        <div class="rsvp-deadline">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
+          Confirma antes del 31 de Diciembre · 2026
+        </div>
+      </div>
+    </div>
+
+    <div class="rsvp-ok" id="rsvpOk">
+      <span class="rsvp-ok-icon">✦</span>
+      <span class="rsvp-ok-title">¡Gracias!</span>
+      <p class="rsvp-ok-msg" id="rsvpOkMsg">Tu confirmación ha sido registrada.<br>¡Nos vemos en mis XV años!</p>
+    </div>
+  </section>
+
+    <section id="album" class="sec rv">
+    <span class="eyebrow">Comparte tus Fotos</span>
+    <h2 class="heading">Álbum de fotos</h2>
+    <div class="orn" style="margin-top:16px"><div class="orn-line" style="background:linear-gradient(to right,transparent,rgba(191,146,128,.4),transparent)"></div><div class="orn-diamond-sm" style="background:var(--gold)"></div><div class="orn-diamond" style="background:var(--gold)"></div><div class="orn-diamond-sm" style="background:var(--gold)"></div><div class="orn-line" style="background:linear-gradient(to right,transparent,rgba(191,146,128,.4),transparent)"></div></div>
+    <p class="album-txt">Ayúdanos a guardar cada momento: sube aquí las fotos que tomes durante el evento.</p>
+    <!-- Álbum de Elysium: el QR abre /album → panel-invitados.vercel.app/subir/xv-vanessa-aileen-de-la-rosa -->
+    <div class="album-qr" data-fecha="2027-01-16">
+      <div class="qr-img">
+        <img src="qr-album.png" alt="Código QR del álbum de fotos" width="176" height="176">
+      </div>
+      <a class="album-btn" href="/album">Subir mis fotos</a>
+    </div>
+    <p class="album-aviso">El álbum de fotos se habilita el día del evento. Regresa aquí y sube todas tus fotos de la noche</p>
+    <script>
+      /* Se desbloquea solo el día del evento (la base además rechaza fotos antes de tiempo) */
+      (function(){
+        var box = document.querySelector('.album-qr');
+        if(!box) return;
+        var p = box.dataset.fecha.split('-');
+        var abre = new Date(+p[0], +p[1] - 1, +p[2], 0, 0, 0);
+        if(new Date() < abre) box.classList.add('bloqueado');
+      })();
+    </script>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="orn" style="margin-bottom:24px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <div class="footer-names rv">Vanessa Aileen</div>
+    <div class="footer-date rv">16 · Enero · 2027</div>
+    <div class="footer-hr"></div>
+    <a href="https://www.instagram.com/elysium.invitaciones" target="_blank" rel="noopener" class="footer-credit rv">@elysium.invitaciones</a>
+  </footer>
+
+</div>
+
+<audio id="bg-music" src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/xv-vanessa-aileen-de-la-rosa/cancion.mp3" preload="none" loop></audio>
+<button id="music-btn" aria-label="Reproducir o pausar música"><img src="corona.webp" alt=""><span class="hint">PLAY</span></button>
+
+<script>
+history.scrollRestoration='manual';window.scrollTo(0,0);
+window.addEventListener('load',function(){window.scrollTo(0,0)});
+
+(function(){
+  var audio=document.getElementById('bg-music'),mb=document.getElementById('music-btn');
+  var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function setPlay(p){mb.classList.toggle('playing',p)}
+  mb.addEventListener('click',function(){ if(audio.paused){audio.play().then(function(){setPlay(true)}).catch(function(){})} else {audio.pause();setPlay(false)} });
+  audio.addEventListener('pause',function(){setPlay(false)});audio.addEventListener('play',function(){setPlay(true)});
+
+  /* ---- chispas (oro, rosa, champán) ---- */
+  var cv=document.getElementById('sparks'),cx=cv.getContext('2d'),P=[],dpr=Math.min(devicePixelRatio||1,2);
+  function rs(){cv.width=innerWidth*dpr;cv.height=innerHeight*dpr}rs();addEventListener('resize',rs);
+  var MIX=['#ffd86b','#ffa1dd','#f7e7ce','#ffffff'];
+  function burst(x,y,n){for(var i=0;i<n;i++){var a=Math.random()*6.283,v=1+Math.random()*4;P.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-1.5,l:1,s:1.5+Math.random()*3,c:MIX[i%4],st:Math.random()<.4})}}
+  var ambient=0;
+  function star(x,y,r){cx.beginPath();for(var i=0;i<8;i++){var rr=i%2?r*.38:r,a=i*Math.PI/4;cx.lineTo(x+Math.cos(a)*rr,y+Math.sin(a)*rr)}cx.closePath();cx.fill()}
+  function loop(){cx.setTransform(dpr,0,0,dpr,0,0);cx.clearRect(0,0,innerWidth,innerHeight);
+    if(ambient&&!reduced&&Math.random()<.16){P.push({x:Math.random()*innerWidth,y:innerHeight+5,vx:(Math.random()-.5)*.4,vy:-(.4+Math.random()*.8),l:1,s:1+Math.random()*2.2,c:MIX[(Math.random()*4)|0],st:Math.random()<.45,amb:1})}
+    for(var i=P.length-1;i>=0;i--){var p=P[i];p.x+=p.vx;p.y+=p.vy;if(!p.amb){p.vy+=.05;p.vx*=.98}p.l-=p.amb?.003:.012;
+      if(p.l<=0){P.splice(i,1);continue}cx.globalAlpha=Math.max(p.l,0);cx.fillStyle=p.c;cx.shadowColor=p.c;cx.shadowBlur=8;
+      if(p.st)star(p.x,p.y,p.s*1.8);else{cx.beginPath();cx.arc(p.x,p.y,p.s,0,6.283);cx.fill()}}
+    cx.globalAlpha=1;requestAnimationFrame(loop)}
+  loop();
+  /* estrellitas desde la corona mientras suena la música */
+  setInterval(function(){if(!mb.classList.contains('playing')||!mb.classList.contains('show'))return;var r=mb.getBoundingClientRect();
+    for(var i=0;i<2;i++){var a=-Math.PI/2+(Math.random()-.5)*2.2,v=.6+Math.random()*1.4;
+      P.push({x:r.left+r.width*(.25+Math.random()*.5),y:r.top+r.height*.3,vx:Math.cos(a)*v,vy:Math.sin(a)*v-.4,l:1,s:1.2+Math.random()*2.2,c:['#fff6c9','#ffd86b','#ffa1dd','#ffffff'][(Math.random()*4)|0],st:Math.random()<.75,amb:1})}},90);
+  /* magia alrededor de la rueca */
+  var rq=document.getElementById('rueca');
+  setInterval(function(){if(!ambient||!rq)return;var r=rq.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;
+    for(var i=0;i<2;i++){var a=Math.random()*6.283,rad=r.width*(.42+Math.random()*.2);
+      P.push({x:r.left+r.width/2+Math.cos(a)*rad*.8,y:r.top+r.height*.5+Math.sin(a)*rad,vx:(Math.random()-.5)*.5,vy:-(.5+Math.random()*1),l:1,s:1+Math.random()*2.4,c:['#ffffff','#ffa1dd','#ffd1e8','#f7e7ce'][(Math.random()*4)|0],st:Math.random()<.5,amb:1})}},140);
+
+  /* ---- abrir libro ---- */
+  var libro=document.getElementById('libro'),book=document.getElementById('book'),opened=false;
+  libro.addEventListener('click',function(){ if(opened)return;opened=true;
+    audio.play().then(function(){setPlay(true)}).catch(function(){});
+    var r=book.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,70);
+    book.classList.add('open');var tp=libro.querySelector('.tap');tp.style.animation='none';tp.style.transition='opacity .6s';tp.style.opacity=0;
+    setTimeout(function(){book.classList.add('zoom')},2000);
+    setTimeout(function(){libro.classList.add('gone');document.body.classList.remove('locked')},2300);
+    setTimeout(function(){mb.classList.add('show');ambient=1},3300);
+    setTimeout(function(){libro.remove()},4600);
+  });
+
+  /* ---- scroll hint ---- */
+  var hint=document.getElementById('scrollHint'),hh=false;
+  window.addEventListener('scroll',function(){if(!hh&&window.scrollY>60){hh=true;hint.classList.add('hidden')}},{passive:true});
+
+  /* ---- arco de fotos ---- */
+  var fts=document.querySelectorAll('.ft'),fi=0;
+  setInterval(function(){fts[fi].classList.remove('on');fi=(fi+1)%fts.length;fts[fi].classList.add('on')},5000);
+
+  /* ---- cuenta regresiva en anillos (16 ene 2027, 3:50 pm) ---- */
+  var target=new Date('2027-01-16T15:50:00-06:00').getTime(),RING=2*Math.PI*52,prevS='';
+  function pad(n){return String(n).padStart(2,'0')}
+  function ring(id,p){var el=document.getElementById(id);if(!el)return;el.style.strokeDashoffset=(RING*(1-Math.max(0,Math.min(1,p)))).toFixed(2)}
+  function tick(){
+    var d=Math.max(0,target-Date.now());
+    var days=Math.floor(d/86400000),hrs=Math.floor(d%86400000/3600000),mins=Math.floor(d%3600000/60000),secs=Math.floor(d%60000/1000);
+    document.getElementById('cdD').textContent=String(days).padStart(3,'0');
+    document.getElementById('cdH').textContent=pad(hrs);
+    document.getElementById('cdM').textContent=pad(mins);
+    ring('ringD',Math.min(days/365,1));ring('ringH',hrs/24);ring('ringM',mins/60);ring('ringS',secs/60);
+    var ns=pad(secs);
+    if(ns!==prevS){document.getElementById('cdS').textContent=ns;prevS=ns;
+      if(!reduced){var it=document.getElementById('cdItemS');it.classList.remove('tick');void it.offsetWidth;it.classList.add('tick')}}
+  }
+  tick();setInterval(tick,1000);
+
+  /* ---- rueda 3D de fotos ---- */
+  (function(){
+    var ring=document.getElementById('wheel-ring');if(!ring)return;
+    var cards=ring.querySelectorAll('.wheel-card'),n=cards.length;if(!n)return;
+    var R=Math.round((150+14)/(2*Math.sin(Math.PI/n)));
+    var rot=0,vel=0,drag=false,sx=0,sr=0,lx=0,raf=null,auto=true;
+    cards.forEach(function(c,i){c.style.transform='rotateY('+(360/n*i)+'deg) translateZ('+R+'px)'});
+    function set(){ring.style.transform='translateZ(-'+R+'px) rotateY('+rot+'deg)'}set();
+    function inertia(){if(drag)return;rot+=vel;vel*=.94;set();if(Math.abs(vel)>.05)raf=requestAnimationFrame(inertia)}
+    function down(x){drag=true;auto=false;ring.classList.add('dragging');sx=x;lx=x;sr=rot;vel=0;if(raf)cancelAnimationFrame(raf)}
+    function move(x){if(!drag)return;rot=sr+(x-sx)*.45;vel=(x-lx)*.5;lx=x;set()}
+    function up(){if(!drag)return;drag=false;ring.classList.remove('dragging');raf=requestAnimationFrame(inertia)}
+    ring.addEventListener('mousedown',function(e){e.preventDefault();down(e.clientX)});
+    window.addEventListener('mousemove',function(e){move(e.clientX)});window.addEventListener('mouseup',up);
+    ring.addEventListener('touchstart',function(e){down(e.touches[0].clientX)},{passive:true});
+    ring.addEventListener('touchmove',function(e){move(e.touches[0].clientX)},{passive:true});
+    ring.addEventListener('touchend',up);
+    (function spin(){if(auto&&!drag&&!reduced){rot+=.14;set()}requestAnimationFrame(spin)})();
+  })();
+
+  /* ---- revelados ---- */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  setTimeout(function(){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})},9000);
+
+  /* ---- RSVP · PANEL ---- */
+    const PANEL_API = 'https://panel-invitados.vercel.app/api/confirmar';
+  const RSVP_URL  = 'https://xv-vanessa-aileen-de-la-rosa.vercel.app';
+  const DEADLINE  = new Date(2026, 11, 31, 23, 59, 59, 999);   /* 31 dic 2026 */
+  const frozen    = Date.now() > DEADLINE.getTime();
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlPara   = (urlParams.get('para') || '').trim();
+  const rawP      = parseInt(urlParams.get('pases')) || 1;
+  let   urlPases  = (isNaN(rawP) || rawP < 1 || rawP > 20) ? 1 : rawP;
+
+  let savedNames = [];
+  let nombresAsignados = [];
+  const asignadosChoices = {};
+
+  const note = document.getElementById('rsvpPasesNote');
+  const pasesNumEl = document.getElementById('rsvp-pases-num');
+  const toggleEl = document.getElementById('rsvp-toggle-std');
+  const asigEl = document.getElementById('rsvp-asignados');
+  const fieldsWrap = document.getElementById('namesContainer');
+
+  function renderAsignados(){
+    if(!asigEl) return;
+    asigEl.innerHTML = '';
+    nombresAsignados.forEach(function(nm, idx){
+      const card = document.createElement('div');
+      card.className = 'rsvp-person-card';
+      const choice = asignadosChoices[idx];
+      if(choice) card.setAttribute('data-choice', choice);
+      const name = document.createElement('div');
+      name.className = 'rsvp-person-name';
+      name.textContent = nm;
+      const tog = document.createElement('div');
+      tog.className = 'rsvp-person-toggle';
+      const bY = document.createElement('button');
+      bY.type = 'button';
+      bY.className = 'rsvp-mini-btn' + (choice === 'yes' ? ' rsvp-mini-yes-on' : '');
+      bY.textContent = 'Asistiré';
+      bY.disabled = frozen;
+      bY.addEventListener('click', function(){ if(frozen) return; asignadosChoices[idx] = 'yes'; renderAsignados(); });
+      const bN = document.createElement('button');
+      bN.type = 'button';
+      bN.className = 'rsvp-mini-btn' + (choice === 'no' ? ' rsvp-mini-no-on' : '');
+      bN.textContent = 'No asistiré';
+      bN.disabled = frozen;
+      bN.addEventListener('click', function(){ if(frozen) return; asignadosChoices[idx] = 'no'; renderAsignados(); });
+      tog.appendChild(bY);
+      tog.appendChild(bN);
+      card.appendChild(name);
+      card.appendChild(tog);
+      asigEl.appendChild(card);
+    });
+  }
+  function paintNote(){
+    if(pasesNumEl) pasesNumEl.textContent = urlPases;
+    if(!note) return;
+    if(urlPara){
+      note.textContent='✦ '+urlPara+', tienes '+(urlPases===1?'1 pase reservado':urlPases+' pases reservados')+' ✦';
+    } else {
+      note.textContent='✦ '+(urlPases===1?'1 pase reservado para ti':urlPases+' pases reservados para ti')+' ✦';
+    }
+  }
+  paintNote();
+
+  function renderNameFields(count){
+    const c=document.getElementById('namesContainer');
+    c.innerHTML='';
+    for(let i=1;i<=count;i++){
+      const inp=document.createElement('input');
+      inp.type='text';
+      inp.className='rsvp-input rsvp-name-input';
+      inp.placeholder = count === 1 ? 'Tu nombre completo' : 'Invitado ' + i;
+      inp.autocomplete='off';
+      inp.maxLength=60;
+      const idx=i-1;
+      if(savedNames[idx]){
+        inp.value=savedNames[idx];
+      }
+      inp.addEventListener('input', function(){ savedNames[idx] = this.value; });
+      c.appendChild(inp);
+    }
+  }
+  renderNameFields(urlPases);
+
+  window.rsvpChoice='';
+  const btnYes = document.getElementById('btnYes');
+  const btnNo  = document.getElementById('btnNo');
+  const btnEnv = document.getElementById('btnEnviar');
+
+  if(urlPara){
+    btnYes.disabled = true;
+    btnNo.disabled  = true;
+  }
+
+  window.selectRsvp=function(choice){
+    window.rsvpChoice=choice;
+    btnYes.className='rsvp-toggle-btn'+(choice==='yes'?' selected-yes':'');
+    btnNo.className ='rsvp-toggle-btn'+(choice==='no'?' selected-no':'');
+  };
+
+  if(urlPara){
+    fetch(PANEL_API + '?nombre=' + encodeURIComponent(urlPara) + '&url_boda=' + encodeURIComponent(RSVP_URL))
+      .then(r => r.json())
+      .then(resp => {
+        const d = resp.invitado;
+        if(d && typeof d.pases === 'number' && d.pases > 0 && d.pases <= 20){
+          urlPases = d.pases;
+          paintNote();
+        }
+
+        const tieneAsignados = d && Array.isArray(d.nombres_asignados) && d.nombres_asignados.length > 0;
+        if(tieneAsignados){
+          nombresAsignados = d.nombres_asignados.slice();
+          if(toggleEl) toggleEl.style.display = 'none';
+          if(fieldsWrap){ fieldsWrap.style.display = 'none'; fieldsWrap.innerHTML = ''; }
+          if(asigEl) asigEl.style.display = 'flex';
+          const confirmadosLower = (d.nombres_confirmados || []).map(function(s){ return String(s).toLowerCase().trim(); });
+          if(d.estado === 'confirmado' || d.estado === 'declino'){
+            nombresAsignados.forEach(function(nm, idx){
+              if(d.estado === 'declino'){
+                asignadosChoices[idx] = 'no';
+              } else {
+                asignadosChoices[idx] = confirmadosLower.indexOf(nm.toLowerCase().trim()) >= 0 ? 'yes' : 'no';
+              }
+            });
+            document.getElementById('rsvp-btn-text').textContent='Actualizar respuesta';
+            const feedEl = document.getElementById('rsvp-feedback');
+            if(feedEl){
+              feedEl.style.display='block';
+              feedEl.style.color='var(--gold)';
+              feedEl.textContent = d.estado === 'confirmado'
+                ? '¡Ya tienes registrada tu respuesta! Puedes actualizarla.'
+                : 'Ya tienes registrado que no podrán asistir. Puedes cambiar la respuesta.';
+            }
+          }
+          renderAsignados();
+          return;
+        }
+
+        btnYes.disabled = false;
+        btnNo.disabled  = false;
+        if(d && (d.estado === 'confirmado' || d.estado === 'declino')){
+          if(d.nombres_confirmados && d.nombres_confirmados.length){
+            savedNames = d.nombres_confirmados.slice();
+          }
+          renderNameFields(urlPases);
+          window.selectRsvp(d.estado === 'confirmado' ? 'yes' : 'no');
+          document.getElementById('rsvp-btn-text').textContent='Actualizar respuesta';
+        }
+      })
+      .catch(() => {
+        btnYes.disabled = false;
+        btnNo.disabled  = false;
+      });
+  }
+
+  if(frozen){
+    btnYes.disabled = true;
+    btnNo.disabled  = true;
+    btnEnv.disabled = true;
+    document.getElementById('rsvp-btn-text').textContent='Fecha límite alcanzada';
+  }
+
+  window.sendRsvp=function(){
+    if(frozen) return;
+    const modoAsignados = nombresAsignados.length > 0;
+    let names = [];
+    let estadoFinal;
+    const feedEl=document.getElementById('rsvp-feedback');
+
+    if(modoAsignados){
+      const faltantes = nombresAsignados.filter(function(_, i){ return !asignadosChoices[i]; });
+      if(faltantes.length > 0){
+        if(feedEl){
+          feedEl.style.display='block';
+          feedEl.style.color='#9a4a3a';
+          feedEl.textContent = 'Por favor responde por cada invitado (' + faltantes.length + ' pendiente' + (faltantes.length === 1 ? '' : 's') + ').';
+        }
+        return;
+      }
+      names = nombresAsignados.filter(function(_, i){ return asignadosChoices[i] === 'yes'; });
+      estadoFinal = names.length > 0 ? 'confirmado' : 'declino';
+    } else {
+      if(!window.rsvpChoice){ btnYes.focus(); return; }
+      const inputs=document.querySelectorAll('.rsvp-name-input');
+      names=Array.from(inputs).map(i=>i.value.trim()).filter(n=>n);
+      if(window.rsvpChoice==='yes' && names.length===0){
+        inputs[0]?.focus();
+        return;
+      }
+      estadoFinal = window.rsvpChoice==='yes' ? 'confirmado' : 'declino';
+    }
+
+    btnEnv.disabled=true;
+    document.getElementById('rsvp-btn-text').textContent='Enviando…';
+
+    fetch(PANEL_API,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        nombre: urlPara || (names[0] || 'Invitado'),
+        url_boda: RSVP_URL,
+        estado: estadoFinal,
+        pases_confirmados: estadoFinal === 'confirmado' ? names.length : 0,
+        nombres_confirmados: estadoFinal === 'confirmado' ? names : []
+      })
+    }).then(r=>{
+      if(!r.ok) throw new Error('Error');
+      btnEnv.disabled=false;
+      document.getElementById('rsvp-btn-text').textContent='Actualizar respuesta';
+      if(feedEl){
+        feedEl.style.display='block';
+        feedEl.style.color = estadoFinal === 'confirmado' ? '#2F5A28' : 'var(--gold)';
+        if(estadoFinal === 'confirmado'){
+          feedEl.textContent = names.length === 1
+            ? '¡Confirmado para ' + names[0] + '! Nos vemos pronto. ✦'
+            : '¡Confirmado para ' + names.length + ' invitados! Nos vemos pronto. ✦';
+        } else {
+          feedEl.textContent = 'Hemos registrado que no podrán asistir. ¡Gracias por avisarnos!';
+        }
+      }
+    }).catch(()=>{
+      btnEnv.disabled=false;
+      document.getElementById('rsvp-btn-text').textContent='Confirmar asistencia';
+      if(feedEl){
+        feedEl.style.display='block';
+        feedEl.style.color='#9a4a3a';
+        feedEl.textContent='Error de conexión. Intenta de nuevo.';
+      }
+    });
+  };
+
+  /* Copy */
+  window.copyText=function(text){
+    navigator.clipboard.writeText(text).catch(()=>{});
+    const t=document.getElementById('copyToast');
+    t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'),2400);
+  };
+})();
+
+</script>
+<script>
+/* ELYSIUM AUDIO v2 — el invitado entra y escucha la cancion.
+   - Primer gesto (sobre, idioma, boton, cualquier toque): la cancion arranca SI O SI.
+     Si el boton de musica de la plantilla la pausa en ese mismo toque, se reanuda.
+   - Despues del primer arranque ya no se fuerza nada: el boton de pausa funciona normal.
+   - Si el archivo de la cancion falla (404, host caido, HTML en vez de mp3) se usa una de respaldo. */
+(function(){
+  if(window.__elyAudio2) return; window.__elyAudio2=1;
+  var FALLBACK='https://boda-isaac-y-claudia.vercel.app/cancion.mp3';
+  var forced=false, gestured=false;
+  function A(){ return document.querySelector('audio'); }
+  function toFallback(a){
+    if(!a || a.getAttribute('data-ely-fb')) return;
+    a.setAttribute('data-ely-fb','1');
+    try{ a.src=FALLBACK; a.load(); if(gestured){ var p=a.play(); if(p&&p.catch) p.catch(function(){}); } }catch(e){}
+  }
+  function hook(a){
+    if(!a || a.__elyHook) return; a.__elyHook=1;
+    a.addEventListener('error',function(){ toFallback(a); });
+    var ss=a.querySelectorAll('source');
+    for(var i=0;i<ss.length;i++){ ss[i].addEventListener('error',function(){ toFallback(a); }); }
+    if(a.networkState===3 || (!ss.length && !a.getAttribute('src'))) toFallback(a);
+  }
+  function kick(a){
+    try{ a.muted=false; if(a.volume<0.2) a.volume=0.6; }catch(e){}
+    if(a.paused && a.currentTime===0 && a.readyState===0){ try{ a.preload='auto'; a.load(); }catch(e){} }
+    var p; try{ p=a.play(); }catch(e){ return; }
+    if(p && p.catch) p.catch(function(){});
+  }
+  function onGesture(){
+    var a=A(); if(!a) return;
+    hook(a); gestured=true;
+    if(forced) return;
+    if(a.paused) kick(a);
+    setTimeout(function(){
+      var b=A();
+      if(!forced && b && b.paused) kick(b);
+      forced=true;
+    },150);
+  }
+  hook(A());
+  ['pointerdown','touchend','click','keydown'].forEach(function(ev){
+    document.addEventListener(ev,onGesture,{capture:true,passive:true});
+  });
+})();
+
+</script>
+</body>
+</html>
