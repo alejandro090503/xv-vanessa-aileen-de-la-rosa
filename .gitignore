@@ -1,3 +1,6 @@
 .vercel
 .env.local
 _src/*.png
+
+.vercel
+.env*

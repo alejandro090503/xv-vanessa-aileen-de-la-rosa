@@ -1,0 +1,83 @@
+/* VA EN: <style>, justo ANTES de la línea "@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}" (ancla única) */
+/* D-brillo · metálico PLATA con toque durazno */
+:root{
+  --gold-deep:#5e2d40;--glow:192,192,192;
+  /* fondo claro: oscuro → medio → brillo (plata, nunca blanco) → medio → oscuro */
+  --foil:linear-gradient(100deg,#4e2430 0%,#6e4a55 24%,#8a8590 50%,#6e4a55 76%,#4e2430 100%);
+  /* fondo oscuro: puede llegar a #FFFBEA */
+  --foil-osc:linear-gradient(100deg,#a9a7b0 0%,#dcdae0 24%,#FFFBEA 50%,#e9cdc2 72%,#a9a7b0 100%);
+  --metal:linear-gradient(100deg,#5e2d40 0%,#8a6670 22%,#C0C0C0 46%,#ffddcf 56%,#9a8a90 74%,#5e2d40 100%);
+}
+@keyframes goldSweep{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+
+/* ── Foil en títulos, nombres, "&" y cifras ── */
+.d-foil{background:var(--foil)!important;background-size:220% 100%!important;-webkit-background-clip:text!important;background-clip:text!important;
+  -webkit-text-fill-color:transparent;color:var(--gold-deep);animation:goldSweep 7s ease-in-out infinite!important;animation-delay:var(--fd,0s)!important;
+  filter:drop-shadow(0 0 6px rgba(var(--glow),.25));
+  padding:.22em .45em;margin-left:-.45em;margin-right:-.45em;line-height:1.25;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.d-foil--osc{background-image:var(--foil-osc)!important;color:#e9e7ec;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5)) drop-shadow(0 0 8px rgba(236,236,242,.22))}
+.hero-name.d-foil{filter:drop-shadow(0 2px 10px rgba(0,0,0,.6)) drop-shadow(0 0 14px rgba(236,236,242,.25));text-shadow:none}
+.d-foil--num{padding:.08em .12em;margin:-.08em -.12em;line-height:1}
+.intro .txt::first-letter{background:var(--foil);background-size:220% 100%;-webkit-background-clip:text;background-clip:text}
+.fam-and,.rsvp-divider-heart{color:#8a6670}
+
+/* ── Destello de lente ── */
+.d-flare{position:absolute;left:var(--x,50%);top:var(--y,0);width:0;height:0;z-index:5;pointer-events:none}
+.d-flare b{position:absolute;left:0;top:0;display:block;width:calc(190px*var(--s,1));height:calc(190px*var(--s,1));
+  margin:calc(-95px*var(--s,1)) 0 0 calc(-95px*var(--s,1));background:var(--d-flare) center/contain no-repeat;
+  opacity:.6;transform:scale(.8);animation:dBloom var(--dur,8s) cubic-bezier(.45,0,.3,1) infinite;animation-delay:var(--del,0s)}
+.d-flare.is-osc b{background-image:var(--d-flare-osc)}
+.d-flare.is-mini b{background-image:var(--d-flare-mini);width:calc(70px*var(--s,1));height:calc(70px*var(--s,1));
+  margin:calc(-35px*var(--s,1)) 0 0 calc(-35px*var(--s,1));animation-name:dTwinkle}
+.d-flare.is-mini.is-osc b{background-image:var(--d-flare-mini-osc)}
+@keyframes dBloom{0%,34%{opacity:.6;transform:scale(.8)}48%{opacity:1;transform:scale(1.15)}56%{opacity:.85;transform:scale(1)}74%,100%{opacity:.6;transform:scale(.8)}}
+@keyframes dTwinkle{0%,40%{opacity:.15;transform:scale(.35) rotate(-18deg)}50%{opacity:1;transform:scale(1) rotate(0)}62%,100%{opacity:.15;transform:scale(.35) rotate(16deg)}}
+.d-tcapa{position:absolute;inset:0;pointer-events:none;z-index:3;overflow:visible}
+.d-float,.d-arco-fl{position:absolute;inset:0;pointer-events:none;z-index:3}
+.d-float{animation:levita 4.5s ease-in-out infinite}
+.d-arco-fl{left:50%;top:26px;width:min(78vw,330px);transform:translateX(-50%);aspect-ratio:1/1.32;bottom:auto}
+
+/* ── Tarjetas: filo con dirección de luz, vidrio, halo y destellos ── */
+.d-card{isolation:isolate;overflow:visible!important}
+.d-halo,.d-rim,.d-sheen{position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;z-index:-1}
+.d-halo{inset:-10px;border-radius:calc(22px + 10px);
+  background:radial-gradient(160px 100px at 8% 0,rgba(192,192,198,.28),transparent 72%),radial-gradient(140px 90px at 92% 100%,rgba(255,200,180,.3),transparent 72%);
+  box-shadow:0 0 38px -6px rgba(183,110,121,.28)}
+.fam-box .d-halo,.rsvp-card .d-halo,.gift-opt .d-halo{border-radius:14px}
+/* fondo claro: plata oscura arriba-izquierda, costados tenues, rebote durazno abajo-derecha */
+.d-rim{padding:1.5px;overflow:hidden;
+  background:linear-gradient(138deg,#6f6b76 0%,#a8a4ae 9%,rgba(160,152,164,.55) 20%,rgba(183,110,121,.22) 42%,rgba(183,110,121,.2) 60%,rgba(232,160,138,.7) 86%,#e39c84 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.d-card--osc .d-rim{background:linear-gradient(138deg,#fff 0%,#eceaf0 8%,rgba(210,208,216,.55) 20%,rgba(247,231,206,.22) 42%,rgba(247,231,206,.2) 60%,rgba(255,205,185,.65) 86%,#ffd9c8 100%)}
+.d-rim i{position:absolute;left:50%;top:50%;width:175%;aspect-ratio:1;margin:-87.5% 0 0 -87.5%;
+  background:conic-gradient(from 0deg,transparent 0deg,transparent 150deg,rgba(160,158,170,.25) 166deg,#8d8996 178deg,rgba(255,255,255,0) 184deg,transparent 330deg,rgba(231,160,140,.25) 348deg,#d98f78 359deg,transparent 360deg);
+  animation:dSpin 10s linear infinite;animation-delay:var(--del,0s)}
+.d-card--osc .d-rim i{background:conic-gradient(from 0deg,transparent 0deg,transparent 150deg,rgba(236,236,242,.25) 166deg,#fff 179deg,rgba(255,255,255,0) 183deg,transparent 330deg,rgba(255,214,196,.2) 348deg,#fff 359deg,transparent 360deg)}
+@keyframes dSpin{to{transform:rotate(360deg)}}
+.d-sheen{inset:0;overflow:hidden}
+.d-sheen i{position:absolute;top:-30%;bottom:-30%;left:0;width:46%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.08) 30%,rgba(255,255,255,.5) 49%,rgba(255,236,228,.16) 56%,transparent);
+  transform:translateX(-140%) skewX(-16deg);animation:dGlass 9s cubic-bezier(.5,0,.2,1) infinite;animation-delay:var(--del,0s)}
+.d-card--osc .d-sheen i{background:linear-gradient(100deg,transparent,rgba(255,255,255,.03) 30%,rgba(255,250,246,.14) 49%,rgba(255,255,255,.04) 56%,transparent)}
+@keyframes dGlass{0%,60%{transform:translateX(-140%) skewX(-16deg)}88%,100%{transform:translateX(340%) skewX(-16deg)}}
+.loc-card,.fam-box,.rsvp-card{border-color:transparent!important;box-shadow:0 18px 44px -16px rgba(94,45,64,.28),0 6px 16px -8px rgba(94,45,64,.16),inset 0 1px 0 rgba(255,255,255,.9)!important}
+.gift-opt{border-color:transparent!important;box-shadow:0 22px 46px -16px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.14)}
+
+/* ── Filetes y divisores con barrido de plata ── */
+.orn-line,.gal-orn,.footer-hr{background:linear-gradient(90deg,transparent,#8a6670 25%,#d6d4da 50%,#ffddcf 58%,#8a6670 75%,transparent)!important;background-size:240% 100%!important;animation:goldSweep 6s ease-in-out infinite}
+.orn-diamond,.orn-diamond-sm{background:linear-gradient(135deg,#7d7884,#e4e2e8 48%,#ffddcf 60%,#8a6670)!important}
+#regalos .orn-line,#footer .orn-line{background:linear-gradient(90deg,transparent,#a9a7b0 25%,#fffbea 50%,#e9cdc2 60%,#a9a7b0 75%,transparent)!important;background-size:240% 100%!important}
+
+/* ── Botones principales con filo de cromo (texto sólido, sin foil) ── */
+.btn-map,.album-btn{box-shadow:0 0 0 1.5px #b9b6c0,0 0 0 2.5px rgba(255,221,207,.55),0 10px 24px -8px rgba(94,45,64,.45),inset 0 1px 0 rgba(255,255,255,.35)!important}
+.btn-cal,.rsvp-btn{box-shadow:0 0 0 1px #a9a5b0,0 8px 20px -8px rgba(94,45,64,.3),inset 0 1px 0 rgba(255,255,255,.9)!important}
+.btn-gift{box-shadow:0 0 0 1.5px #e9e7ee,0 0 0 3px rgba(255,221,207,.35),0 10px 24px -8px rgba(0,0,0,.45),inset 0 1px 0 #fff!important}
+
+@media (prefers-reduced-motion:reduce){
+  .d-foil{animation:none!important;background-position:50% 0!important}
+  .d-flare b{animation:none!important;opacity:.62;transform:none}
+  .d-flare.is-mini b{opacity:.55}
+  .d-rim i,.d-sheen i{display:none}
+}

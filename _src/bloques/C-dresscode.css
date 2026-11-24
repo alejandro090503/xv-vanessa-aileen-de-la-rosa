@@ -1,0 +1,25 @@
+/* INSERTAR: antes de </style> */
+/* ── DRESS CODE (C-dresscode) ── */
+.dcx-figs{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:400px;margin:6px auto 30px;align-items:end}
+.dcx-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px}
+.dcx-fig img{height:210px;width:auto;max-width:100%;object-fit:contain;transform-origin:50% 100%;animation:dcxSway 5.2s ease-in-out infinite;filter:drop-shadow(0 8px 14px rgba(94,45,64,.22))}
+.dcx-fig--b img{animation-delay:-2.6s}
+.dcx-fig figcaption{display:flex;flex-direction:column;align-items:center;gap:3px}
+.dcx-fig-ttl{font-family:'Cinzel',serif;font-weight:600;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark)}
+.dcx-fig-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.05rem;color:var(--deep)}
+@keyframes dcxSway{0%,100%{transform:rotate(-2.2deg) translateY(0)}50%{transform:rotate(2.2deg) translateY(-6px)}}
+.dcx-sub{font-family:'Cinzel',serif;font-weight:600;font-size:.88rem;letter-spacing:.22em;text-transform:uppercase;color:var(--deep);margin:4px 0 20px}
+.dcx-sub2{margin-top:34px;margin-bottom:10px}
+.dcx-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px 14px;max-width:360px;margin:0 auto}
+.dcx-sw{display:flex;flex-direction:column;align-items:center;gap:10px;width:96px;animation:dcxFloat 4.6s ease-in-out infinite;animation-delay:var(--d,0s)}
+.dcx-dot{position:relative;display:block;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.75) 50%,transparent 62%) 130% 0/260% 100% no-repeat,var(--c);
+  box-shadow:0 0 8px 1px rgba(232,190,170,.45),0 4px 12px rgba(94,45,64,.18);
+  animation:dcxGlow 3.4s ease-in-out infinite,dcxSweep 4.8s ease-in-out infinite;animation-delay:var(--d,0s),var(--d,0s)}
+.dcx-light{border:1px solid rgba(168,168,176,.9)}
+.dcx-name{font-family:'Jost',sans-serif;font-weight:500;font-size:.92rem;line-height:1.3;color:var(--dark);text-align:center}
+.dcx-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.2rem;color:var(--text)}
+@keyframes dcxGlow{0%,100%{box-shadow:0 0 8px 1px rgba(232,190,170,.45),0 4px 12px rgba(94,45,64,.18)}50%{box-shadow:0 0 22px 5px rgba(232,190,170,.85),0 4px 12px rgba(94,45,64,.18)}}
+@keyframes dcxSweep{0%,35%{background-position:130% 0,0 0}75%,100%{background-position:-30% 0,0 0}}
+@keyframes dcxFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@media (prefers-reduced-motion:reduce){.dcx-fig img,.dcx-sw{animation:none}.dcx-dot{animation:none;box-shadow:0 4px 12px rgba(94,45,64,.18);background:var(--c)}}

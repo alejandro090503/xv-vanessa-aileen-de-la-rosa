@@ -1,0 +1,14 @@
+/* INSERTAR: antes de </style> */
+/* ── GALERÍA 3D (C-galeria): reflejo + lightbox ── */
+.wheel-scene{height:440px}
+.wheel-ring{touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.wheel-card{cursor:pointer}
+.wheel-refl{position:absolute;left:50%;top:50%;width:150px;height:210px;margin-left:-75px;margin-top:-105px;border-radius:16px;overflow:hidden;background-size:cover;background-position:center;pointer-events:none;opacity:.55}
+.wheel-refl::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff8f0 0%,#fff8f0 42%,rgba(255,248,240,.72) 70%,rgba(255,248,240,.42) 100%)}
+.gl-lb{display:none;position:fixed;inset:0;z-index:100000;align-items:center;justify-content:center;background:rgba(62,28,40,.9);overscroll-behavior:contain;touch-action:manipulation}
+.gl-lb.on{display:flex}
+.gl-lb img{max-width:92vw;max-height:84vh;border-radius:14px;border:2px solid rgba(217,191,152,.6);box-shadow:0 20px 60px rgba(0,0,0,.45);object-fit:contain}
+.gl-lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid rgba(247,231,206,.55);background:rgba(94,45,64,.65);color:#F7E7CE;font:600 22px/1 'Jost',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;touch-action:manipulation}
+.gl-x{top:max(16px,env(safe-area-inset-top));right:16px}
+.gl-p{left:10px;top:50%;margin-top:-24px}
+.gl-n{right:10px;top:50%;margin-top:-24px}

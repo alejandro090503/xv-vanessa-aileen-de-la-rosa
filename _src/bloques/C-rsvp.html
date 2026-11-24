@@ -1,0 +1,36 @@
+<!-- INSERTAR: reemplaza el marcador RSVP_HTML de template.html (ancla única; el id rsvp-section se conserva) -->
+    <section id="rsvp-section" class="rv">
+      <div class="rsv-wrap">
+        <span class="eyebrow">Confirmación</span>
+        <h2 class="heading">¿Nos acompañas?</h2>
+        <div class="orn" style="margin-top:14px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+        <p class="rsv-date">Confirma antes del 31 de Diciembre · 2026</p>
+        <p class="rsv-hi" id="rsv-hi" style="display:none"></p>
+        <p class="rsv-note" id="rsv-note"></p>
+        <div class="rsv-boxes">
+          <div class="rsv-box"><span class="rsv-box-lbl">Pases</span><span class="rsv-box-num" id="rsv-pases">1</span></div>
+          <div class="rsv-box" id="rsv-menores-box" style="display:none"><span class="rsv-box-lbl">Menores</span><span class="rsv-box-num" id="rsv-menores">0</span></div>
+        </div>
+
+        <div id="rsv-bandeja">
+          <div class="rsv-toggle" id="rsv-toggle">
+            <button class="rsv-tbtn" id="rsv-yes" type="button">Sí, asistiré</button>
+            <button class="rsv-tbtn" id="rsv-no" type="button">No podré asistir</button>
+          </div>
+          <div class="rsv-asig" id="rsv-asig" style="display:none"></div>
+          <div class="rsv-fields" id="rsv-fields" style="display:none"></div>
+          <button class="rsv-send" id="rsv-send" type="button"><span id="rsv-send-t">Confirmar asistencia</span></button>
+        </div>
+
+        <div class="rsv-gracias" id="rsv-gracias" style="display:none">
+          <svg class="rsv-gracias-ic" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="8.5 12.5 11 15 16 9.5"/></svg>
+          <p class="rsv-gracias-t" id="rsv-gracias-t"></p>
+          <p class="rsv-gracias-s" id="rsv-gracias-s"></p>
+          <button class="rsv-edit" id="rsv-edit" type="button">Modificar mi respuesta</button>
+        </div>
+        <p class="rsv-fb" id="rsv-fb" role="status"></p>
+
+        <!-- stubs ocultos: el JS viejo (/*RSVP_JS*/ de main.js) busca estos ids; quitar junto con ese bloque -->
+        <div hidden aria-hidden="true"><div id="namesContainer"></div><button id="btnYes" type="button"></button><button id="btnNo" type="button"></button><button id="btnEnviar" type="button"></button><span id="rsvp-btn-text"></span></div>
+      </div>
+    </section>

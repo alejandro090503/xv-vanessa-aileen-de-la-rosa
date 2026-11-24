@@ -1,0 +1,20 @@
+/* VA EN: <style>, justo ANTES de la línea "@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}" (ancla única) */
+/* D-vivo · corona de plata con luz en tiempo real (asoma en la esquina superior, nunca sobre texto) */
+.d-vivo{position:absolute;top:10px;width:clamp(54px,15vw,66px);aspect-ratio:1;z-index:2;pointer-events:none;
+  transform-origin:50% 12%;animation:dVivoSwing 6.5s ease-in-out infinite;animation-delay:var(--d,0s);
+  filter:drop-shadow(0 4px 6px rgba(94,45,64,.22)) drop-shadow(0 0 10px rgba(255,221,207,.55))}
+.d-vivo canvas{display:block;width:100%;height:100%}
+.d-vivo--r{right:12px}
+.d-vivo--l{left:12px}
+.d-vivo--osc{filter:drop-shadow(0 4px 8px rgba(0,0,0,.45)) drop-shadow(0 0 12px rgba(236,236,242,.4))}
+.d-vivo::after{content:"";position:absolute;inset:-22%;border-radius:50%;z-index:-1;
+  background:radial-gradient(circle,rgba(236,236,242,.55),rgba(255,221,207,.25) 45%,transparent 70%);animation:glow 5s ease-in-out infinite}
+@keyframes dVivoSwing{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(4deg) translateY(-4px)}}
+
+/* Rueca: barrido de plata que recorre su contorno usando su propio PNG como máscara (sin deformarla) */
+.d-rueca-luz{position:absolute;inset:0;z-index:2;pointer-events:none;
+  -webkit-mask:url(rueca.webp) center/100% auto no-repeat;mask:url(rueca.webp) center/100% auto no-repeat;
+  background:linear-gradient(118deg,transparent 30%,rgba(214,214,222,.0) 38%,rgba(236,238,244,.95) 47%,#fff 50%,rgba(255,214,196,.8) 53%,transparent 62%);
+  background-size:100% 260%;mix-blend-mode:screen;opacity:.9;
+  animation:levita 4.5s ease-in-out infinite,dRuecaLuz 6.5s cubic-bezier(.5,0,.3,1) infinite}
+@keyframes dRuecaLuz{0%,18%{background-position:0 115%}72%,100%{background-position:0 -15%}}

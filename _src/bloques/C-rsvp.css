@@ -1,0 +1,39 @@
+/* INSERTAR: antes de </style> */
+/* ── RSVP (C-rsvp) ── */
+#rsvp-section{position:relative;overflow:hidden;padding:min(11vh,88px) 22px;background:linear-gradient(180deg,var(--surface),#fdebe6);text-align:center}
+.rsv-wrap{max-width:430px;margin:0 auto}
+.rsv-date{font-family:'Cinzel',serif;font-weight:600;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:var(--deep);margin-top:4px}
+.rsv-hi{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:2rem;line-height:1.2;color:var(--dark);margin-top:24px}
+.rsv-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:1.2rem;color:var(--text);margin-top:6px}
+.rsv-boxes{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:18px 0 8px}
+.rsv-box{display:flex;flex-direction:column;align-items:center;min-width:132px;padding:14px 26px;border:1px solid var(--border);border-radius:16px;background:var(--card);box-shadow:0 6px 18px rgba(94,45,64,.08)}
+.rsv-box-lbl{font-family:'Cinzel',serif;font-weight:600;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--deep)}
+.rsv-box-num{font-family:'Cinzel',serif;font-weight:600;font-size:3rem;line-height:1.1;color:var(--deep)}
+#rsv-bandeja{margin-top:20px}
+.rsv-toggle{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.rsv-tbtn{min-height:54px;padding:8px 10px;border-radius:14px;border:1.5px solid var(--border);background:var(--card);font-family:'Jost',sans-serif;font-weight:600;font-size:1rem;line-height:1.25;color:var(--dark);cursor:pointer;transition:background .25s,color .25s,border-color .25s;touch-action:manipulation}
+.rsv-tbtn.on{background:var(--deep);border-color:var(--deep);color:#fff}
+.rsv-tbtn:disabled,.rsv-mini:disabled{opacity:.5;cursor:not-allowed}
+.rsv-fields{margin-top:16px;display:grid;gap:10px}
+.rsv-input{width:100%;min-height:54px;padding:12px 16px;border-radius:12px;border:1.5px solid rgba(138,69,82,.4);background:#fff;font-family:'Jost',sans-serif;font-weight:500;font-size:1rem;color:var(--dark);outline:none}
+.rsv-input::placeholder{color:#8a6a70}
+.rsv-input:focus{border-color:var(--deep);box-shadow:0 0 0 3px rgba(183,110,121,.22)}
+.rsv-asig{margin-top:6px;display:flex;flex-direction:column;gap:10px;text-align:left}
+.rsv-person{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--card)}
+.rsv-person-n{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.3rem;color:var(--dark);margin-bottom:10px}
+.rsv-person-t{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rsv-mini{min-height:44px;border-radius:10px;border:1.5px solid var(--border);background:transparent;font-family:'Jost',sans-serif;font-weight:600;font-size:.95rem;color:var(--dark);cursor:pointer;touch-action:manipulation}
+.rsv-mini.on{background:var(--deep);border-color:var(--deep);color:#fff}
+.rsv-send{width:100%;margin-top:18px;min-height:56px;border-radius:999px;border:none;background:linear-gradient(100deg,#8a4552,#B76E79 55%,#8a4552);color:#fff;font-family:'Cinzel',serif;font-weight:600;font-size:.95rem;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;animation:rsvBreathe 3.2s ease-in-out infinite;touch-action:manipulation}
+.rsv-send:disabled{opacity:.5;cursor:not-allowed;animation:none}
+@keyframes rsvBreathe{0%,100%{box-shadow:0 0 0 0 rgba(183,110,121,.4);transform:scale(1)}50%{box-shadow:0 0 0 12px rgba(183,110,121,0);transform:scale(1.015)}}
+.rsv-gracias{margin:24px auto 0;padding:28px 22px;background:var(--card);border:1.5px solid var(--border);border-radius:18px;box-shadow:0 10px 28px rgba(94,45,64,.12)}
+.rsv-gracias-ic{color:var(--accent);margin:0 auto 10px;display:block}
+.rsv-gracias-t{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.7rem;line-height:1.25;color:var(--dark);margin-bottom:8px}
+.rsv-gracias-s{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.2rem;line-height:1.55;color:var(--text);margin-bottom:18px}
+.rsv-edit{min-height:46px;padding:10px 24px;border:1.5px solid var(--border);background:transparent;border-radius:999px;font-family:'Jost',sans-serif;font-weight:600;font-size:.95rem;color:var(--deep);cursor:pointer;touch-action:manipulation}
+.rsv-edit:disabled{opacity:.45;cursor:not-allowed}
+.rsv-fb{margin-top:14px;min-height:24px;font-family:'Jost',sans-serif;font-weight:600;font-size:.95rem;color:var(--deep)}
+.rsv-fb.err{color:#8a2e3a}
+.rsv-confetti{position:fixed;top:-14px;width:8px;height:13px;border-radius:2px;z-index:99999;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.rsv-send{animation:none}}

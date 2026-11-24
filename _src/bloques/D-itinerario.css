@@ -1,0 +1,28 @@
+/* VA EN: <style>, justo ANTES de la línea "@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}" (ancla única) */
+/* D-itinerario · horas en Bodoni Moda (solo aquí) + estela de luz de plata */
+.d-itin .itin-time{display:inline-flex;align-items:baseline;gap:5px;font-family:'Bodoni Moda','Cormorant Garamond',serif;font-weight:500;
+  font-size:2.15rem;letter-spacing:.005em;line-height:1.08;color:var(--dark);font-variant-numeric:lining-nums;font-optical-sizing:auto;
+  transition:color .6s ease,text-shadow .6s ease}
+.d-it-m{font-family:'Bodoni Moda','Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:17px;letter-spacing:.04em;color:var(--deep)}
+.d-itin .itin-item.is-lit .itin-time{color:var(--plum);text-shadow:0 0 12px rgba(192,192,200,.75),0 0 22px rgba(255,221,207,.8)}
+
+.d-itin::before{opacity:.35!important}
+.d-it-linea,.d-it-t1,.d-it-t2,.d-it-t3{position:absolute;left:50%;top:0;pointer-events:none;z-index:0;border-radius:4px}
+.d-it-linea{width:1.5px;transform:translateX(-50%);background:linear-gradient(180deg,rgba(138,102,112,.2),#8d8996 30%,#b9b6c0 80%,#ffddcf)}
+.d-it-t1{width:7px;background:linear-gradient(180deg,transparent,rgba(183,110,121,.28));filter:blur(1.5px)}
+.d-it-t2{width:3px;background:linear-gradient(180deg,transparent,rgba(255,205,185,.75))}
+.d-it-t3{width:1.6px;background:linear-gradient(180deg,transparent,#fff 60%,#eceaf0)}
+.d-it-head{position:absolute;left:50%;top:0;width:0;height:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .35s ease}
+.d-it-head.is-on{opacity:1}
+.d-it-head b{position:absolute;left:-70px;top:-70px;width:140px;height:140px;background:var(--d-flare) center/contain no-repeat;animation:dItLatido 3.4s ease-in-out infinite}
+@keyframes dItLatido{0%,100%{opacity:.82;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}
+
+.d-itin .itin-dot{position:relative;transition:box-shadow .55s ease,background .55s ease}
+.d-itin .itin-item.is-lit .itin-dot{background:radial-gradient(circle at 38% 32%,#fff 0 26%,#e4e2e8 52%,#a9a5b0 100%)!important;
+  box-shadow:0 0 0 3px var(--bg),0 0 0 4px #b9b6c0,0 0 12px 3px rgba(192,192,200,.8),0 0 26px 6px rgba(255,205,185,.55)!important}
+.d-itin .itin-dot::before{content:'';position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;
+  background:var(--d-flare-mini) center/contain no-repeat;opacity:0;pointer-events:none}
+.d-itin .itin-item.is-lit .itin-dot::before{animation:dItChispa 1.15s cubic-bezier(.2,.7,.2,1) 1}
+@keyframes dItChispa{0%{opacity:0;transform:scale(.25) rotate(-24deg)}28%{opacity:1;transform:scale(1.08) rotate(0)}100%{opacity:0;transform:scale(.55) rotate(18deg)}}
+@media (max-width:340px){.d-itin .itin-time{font-size:1.8rem}.d-it-m{font-size:16px}}
+@media (prefers-reduced-motion:reduce){.d-it-head{display:none}}

@@ -1,0 +1,21 @@
+/* INSERTAR: antes de </style> (después de MUSIC_CSS; ancla única: </style>) */
+.ink-sec{isolation:isolate}
+.ink-bg{position:absolute;left:0;right:0;top:-180px;bottom:-180px;z-index:-2;pointer-events:none;overflow:hidden;-webkit-mask-image:linear-gradient(transparent,#000 34%,#000 66%,transparent);mask-image:linear-gradient(transparent,#000 34%,#000 66%,transparent)}
+.ink-bg.esp{transform:scaleX(-1)}
+.ink-bg img{position:absolute;inset:-10%;width:120%;height:120%;max-width:none;object-fit:cover;opacity:.92;will-change:transform;
+  --x0:-3%;--y0:-2%;--r0:-1deg;--x1:3%;--y1:2.5%;--r1:1.2deg;
+  animation:inkDrift 22s ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+.ink-bg.d1 img{--x0:-4%;--y0:-3%;--r0:-1.2deg;--x1:4%;--y1:3%;--r1:1.2deg}
+.ink-bg.d2 img{--x0:4%;--y0:-2%;--r0:1deg;--x1:-4%;--y1:3%;--r1:-1.2deg}
+.ink-bg.d3 img{--x0:-3%;--y0:3%;--r0:1.2deg;--x1:3%;--y1:-3%;--r1:-1deg}
+.ink-bg.d4 img{--x0:3%;--y0:3%;--r0:-1deg;--x1:-3%;--y1:-3.5%;--r1:1.2deg}
+@keyframes inkDrift{
+  from{transform:translate3d(var(--x0),var(--y0),0) scale(1.02) rotate(var(--r0))}
+  to{transform:translate3d(var(--x1),var(--y1),0) scale(1.16) rotate(var(--r1))}
+}
+/* halo claro en los textos que quedan sobre tinta (.metal usa fill transparente: se excluye) */
+.ink-sec .eyebrow,.ink-sec .txt,.ink-sec .sub,.ink-sec .heading,.ink-sec .heading-sm,.ink-sec .firma,
+.ink-sec .fam-lbl,.ink-sec .fam-name,.ink-sec .fam-and,.ink-sec .dc-text,.ink-sec .dc-avoid-lbl,.ink-sec .dc-avoid-name,
+.ink-sec .dc-col-ttl,.ink-sec .gift-msg,.ink-sec .gal-hint,.ink-sec p,.ink-sec label{
+  text-shadow:0 0 8px rgba(255,252,248,.95),0 0 18px rgba(255,252,248,.8),0 0 30px rgba(255,244,228,.6)}
+.ink-sec .metal{text-shadow:none}
