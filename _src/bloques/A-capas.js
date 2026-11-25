@@ -3,21 +3,12 @@
   var TINTAS=[ // selector, imagen, espejo, dirección, delay
     ['.intro','top',0,'d1',0],['.sec-sm','corner',0,'d2',-6],['.locs','oval',1,'d3',-11],['.itin','corner',1,'d4',-4],
     ['.dress','hero',0,'d2',-15],['#regalos','footer',1,'d1',-9],['#rsvp-section','oval',0,'d4',-2],['#album','top',1,'d3',-17]];
-  var ADS=[ // selector, archivo, nítido(1)/desenfocado(0), estilo
-    ['.intro','castillo',0,'right:-24%;top:30%;width:64%;opacity:.26'],
-    ['.retrato','aurora',0,'right:-26%;bottom:-4%;width:66%;opacity:.24'],
-    ['.sec-sm','rosas',0,'left:-30%;top:-10%;width:70%;opacity:.25'],
-    ['.sec-sm','fauna',1,'right:-6%;bottom:2%;width:26%;--t:7.5s;--dl:-3s'],
-    ['.locs','primavera',1,'right:-7%;top:1.5%;width:27%;--t:6s;--dl:-2s'],
-    ['.locs','rosas',0,'left:-34%;bottom:-6%;width:78%;opacity:.22'],
-    ['.itin','castillo',1,'left:-9%;bottom:1%;width:28%;--t:8s;--dl:-4s'],
-    ['.itin','flora',0,'right:-18%;top:6%;width:50%;opacity:.24'],
-    ['.dress','corona',1,'right:-7%;top:1%;width:30%;--t:7s;--dl:-5s'],
-    ['.dress','fauna',0,'left:-20%;bottom:-2%;width:56%;opacity:.26'],
-    ['#rsvp-section','rosas',1,'right:-30%;bottom:-6%;width:64%;--t:8s;--dl:-6s'],
-    ['#rsvp-section','corona',0,'left:-22%;top:2%;width:56%;opacity:.22'],
-    ['#album','flora',1,'right:-7%;top:1%;width:26%;--t:7.2s;--dl:-1.5s'],
-    ['#album','fauna',0,'left:-24%;bottom:2%;width:62%;opacity:.26']];
+  var ADS=[ // 1 por sección máx., todos desenfocados, esquinas alternadas
+    ['.retrato','aurora',0,'left:-28%;top:2%;width:62%;--o:.22;--t:12s;--dl:-3s'],
+    ['.locs','castillo',0,'left:-24%;bottom:-2%;width:58%;--o:.2;--t:13s;--dl:-7s'],
+    ['.itin','flora',0,'right:-20%;top:4%;width:48%;--o:.22;--t:11s;--dl:-2s'],
+    ['#rsvp-section','rosas',0,'right:-30%;bottom:-6%;width:66%;--o:.2;--t:14s;--dl:-9s'],
+    ['#album','fauna',0,'left:-22%;top:2%;width:56%;--o:.22;--t:12.5s;--dl:-5s']];
   function go(){
     if(document.body.getAttribute('data-capasA'))return;
     document.body.setAttribute('data-capasA','1');

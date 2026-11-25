@@ -9,7 +9,7 @@
   document.head.appendChild(st);
   var box=document.createElement('div');box.id='petalosA';box.setAttribute('aria-hidden','true');
   document.body.appendChild(box);
-  var N=innerWidth<700?14:22,ps=[],wrap=document.querySelector('.wrap');
+  var N=innerWidth<700?10:16,ps=[],wrap=document.querySelector('.wrap');
   function R(a,b){return a+Math.random()*(b-a)}
   function area(){var r=wrap?wrap.getBoundingClientRect():{left:0,width:innerWidth};return{l:Math.max(0,r.left),w:Math.min(r.width,innerWidth)}}
   function reset(p,first){
@@ -18,9 +18,9 @@
     p.v=R(26,52)*(p.big?.8:1);p.amp=R(14,40);p.f=R(.5,1.2);p.ph=R(0,6.28);p.rot=R(-30,30);
   }
   for(var i=0;i<N;i++){
-    var big=i%4===0,k=1+(i%3),w=big?R(34,46):R(18,28);
+    var big=i%3!==0,k=1+(i%3),w=big?R(34,46):R(18,28);
     var d=document.createElement('div');d.className='pt';
-    d.style.width=w+'px';d.style.opacity=big?R(.2,.34):R(.28,.5);
+    d.style.width=w+'px';d.style.opacity=big?R(.15,.3):R(.25,.4);
     var im=new Image();im.alt='';im.decoding='async';
     im.src='assets/particula-'+k+(big?'-b':'')+'.webp';
     im.style.setProperty('--af',R(2.2,4.2)+'s');im.style.setProperty('--ad',-R(0,4)+'s');

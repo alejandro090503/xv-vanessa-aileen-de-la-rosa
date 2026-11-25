@@ -1,5 +1,6 @@
 /* INSERTAR: antes de </style> (después de A-tintas.css) */
 .adorno{position:absolute;z-index:-1;height:auto;max-width:none;pointer-events:none;user-select:none;-webkit-user-drag:none}
 .adorno.nit{animation:adFlota var(--t,7s) ease-in-out infinite alternate;animation-delay:var(--dl,0s);will-change:transform}
-.adorno.bor{opacity:.28}
+.adorno.bor{opacity:var(--o,.22);animation:adRespira var(--t,12s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+@keyframes adRespira{from{transform:translate3d(0,-8px,0);opacity:calc(var(--o,.22)*.7)}to{transform:translate3d(0,8px,0);opacity:var(--o,.22)}}
 @keyframes adFlota{from{transform:translate3d(0,-6px,0)}to{transform:translate3d(0,6px,0)}}
