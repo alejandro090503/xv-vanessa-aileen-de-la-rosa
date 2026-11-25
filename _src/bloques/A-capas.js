@@ -5,7 +5,6 @@
     ['.dress','hero',0,'d2',-15],['#regalos','footer',1,'d1',-9],['#rsvp-section','oval',0,'d4',-2],['#album','top',1,'d3',-17]];
   var ADS=[ // selector, archivo, nítido(1)/desenfocado(0), estilo
     ['.intro','castillo',0,'right:-24%;top:30%;width:64%;opacity:.26'],
-    ['.retrato','flora',1,'left:-8%;top:3%;width:30%;--t:6.5s;--dl:-1s'],
     ['.retrato','aurora',0,'right:-26%;bottom:-4%;width:66%;opacity:.24'],
     ['.sec-sm','rosas',0,'left:-30%;top:-10%;width:70%;opacity:.25'],
     ['.sec-sm','fauna',1,'right:-6%;bottom:2%;width:26%;--t:7.5s;--dl:-3s'],
