@@ -17,7 +17,17 @@ def lines(a, z):  # 1-indexed inclusive
 m = re.search(r'/\* ============ LIBRO ============ \*/(.*?)/\* ============ SECCIONES', std, re.S)
 libro_css = m.group(1)
 m = re.search(r'(<div id="libro".*?</div>\s*</div>\s*<div class="tap">.*?</div>\s*</div>)', std, re.S)
-libro_dom = m.group(1)
+libro_dom = ('<div id="libro" class="sobre"><img id="envImage" src="sobre.jpg" alt="Invitación XV Vanessa Aileen" fetchpriority="high">'
+  '<video id="envVideo" src="sobre.mp4" muted playsinline preload="auto" poster="sobre.jpg"></video><div class="tap">TOCA PARA ABRIR</div></div>')
+libro_css = '''
+#libro{position:fixed;inset:0;z-index:50;background:#f6ebe4;cursor:pointer;transition:opacity 1.4s ease,visibility 1.4s}
+#libro.gone{opacity:0;visibility:hidden}
+#libro img,#libro video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#libro video{opacity:0;transition:opacity .35s}
+#libro.play video{opacity:1}
+#libro .tap{position:absolute;left:0;right:0;bottom:max(8vh,48px);text-align:center;font-family:'Cinzel',serif;font-weight:600;letter-spacing:.3em;font-size:.8rem;color:#fff;text-shadow:0 1px 8px rgba(110,40,64,.75);animation:tapPulse 2.2s ease-in-out infinite}
+@keyframes tapPulse{50%{opacity:.45}}
+'''
 m = re.search(r'/\* música: corona \*/(.*?)@media \(prefers-reduced', std, re.S)
 music_css = m.group(1)
 

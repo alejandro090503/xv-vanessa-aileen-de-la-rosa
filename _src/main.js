@@ -29,17 +29,20 @@
     for(var i=0;i<2;i++){var a=Math.random()*6.283,rad=r.width*(.42+Math.random()*.2);
       P.push({x:r.left+r.width/2+Math.cos(a)*rad*.8,y:r.top+r.height*.5+Math.sin(a)*rad,vx:(Math.random()-.5)*.5,vy:-(.5+Math.random()*1),l:1,s:1+Math.random()*2.4,c:['#ffffff','#ffa1dd','#ffd1e8','#f7e7ce'][(Math.random()*4)|0],st:Math.random()<.5,amb:1})}},140);
 
-  /* ---- abrir libro ---- */
-  var libro=document.getElementById('libro'),book=document.getElementById('book'),opened=false;
-  libro.addEventListener('click',function(){ if(opened)return;opened=true;
+  /* ---- abrir sobre (video) ---- */
+  var libro=document.getElementById('libro'),vid=document.getElementById('envVideo'),opened=false;
+  function abrir(e){ if(opened)return;opened=true;if(e&&e.cancelable)e.preventDefault();
     audio.play().then(function(){setPlay(true)}).catch(function(){});
-    var r=book.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,70);
-    book.classList.add('open');var tp=libro.querySelector('.tap');tp.style.animation='none';tp.style.transition='opacity .6s';tp.style.opacity=0;
-    setTimeout(function(){book.classList.add('zoom')},2000);
-    setTimeout(function(){libro.classList.add('gone');document.body.classList.remove('locked')},2300);
-    setTimeout(function(){mb.classList.add('show');ambient=1},3300);
-    setTimeout(function(){libro.remove()},4600);
-  });
+    var tp=libro.querySelector('.tap');tp.style.animation='none';tp.style.transition='opacity .4s';tp.style.opacity=0;
+    var done=false;function fin(){if(done)return;done=true;
+      libro.classList.add('gone');document.body.classList.remove('locked');
+      setTimeout(function(){mb.classList.add('show');ambient=1},900);
+      setTimeout(function(){libro.remove()},2600);}
+    var pr=vid.play();libro.classList.add('play');if(pr&&pr.catch)pr.catch(function(){fin()});
+    vid.addEventListener('ended',fin,{once:true});setTimeout(fin,9000);
+  }
+  libro.addEventListener('click',abrir,{passive:false});libro.addEventListener('touchstart',abrir,{passive:false});
+
 
   /* ---- scroll hint ---- */
   var hint=document.getElementById('scrollHint'),hh=false;
