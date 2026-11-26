@@ -615,6 +615,14 @@ body.locked .wrap{opacity:0;transform:scale(1.03)}
 @media (max-width:340px){#menu-btn{padding:0 14px}#menu-btn span{font-size:.75rem}}
 @media (prefers-reduced-motion:reduce){.hero-drift,.hero-glow,.hero-lens::before,.hero-dust i,.loc-card,.fam-box,.dc-col,.dc-avoid-circle,.gift-opt{animation:none!important}}
 
+.wrap>section:not(.live) *,.wrap>section:not(.live)::before,.wrap>section:not(.live)::after{animation:none!important}
+.ink-bg img,.adorno.nit,#hero .hero-bg,#hero .hero-content{will-change:auto!important}
+.hero-glow,.hero-lens,.d-rueca-luz{mix-blend-mode:normal!important}
+.hero-lens{opacity:.55}
+@media (hover:none){.wheel-refl{display:none!important}}
+body:not(.locked) .wrap{transition:none!important;box-shadow:none!important}
+@media (hover:none){.ink-bg img{animation:none!important;transform:none!important}}
+
 </style>
 </head>
 <body class="locked">
@@ -925,7 +933,7 @@ window.addEventListener('load',function(){window.scrollTo(0,0)});
   audio.addEventListener('pause',function(){setPlay(false)});audio.addEventListener('play',function(){setPlay(true)});
 
   /* ---- chispas (oro, rosa, champán) ---- */
-  var cv=document.getElementById('sparks'),cx=cv.getContext('2d'),P=[],dpr=Math.min(devicePixelRatio||1,2);
+  var cv=document.getElementById('sparks'),cx=cv.getContext('2d'),P=[],dpr=(matchMedia('(hover:none)').matches?1:Math.min(devicePixelRatio||1,2));
   function rs(){cv.width=innerWidth*dpr;cv.height=innerHeight*dpr}rs();addEventListener('resize',rs);
   var MIX=['#ffd86b','#ffa1dd','#f7e7ce','#ffffff'];
   function burst(x,y,n){for(var i=0;i<n;i++){var a=Math.random()*6.283,v=1+Math.random()*4;P.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-1.5,l:1,s:1.5+Math.random()*3,c:MIX[i%4],st:Math.random()<.4})}}
@@ -2022,6 +2030,15 @@ window.addEventListener('load',function(){window.scrollTo(0,0)});
   addEventListener('scroll', kick, { passive: true });
   addEventListener('resize', function(){ mide(); kick(); });
   addEventListener('load', function(){ mide(); kick(); });
+})();
+
+</script>
+<script>
+(function(){
+  var secs=document.querySelectorAll('.wrap>section');
+  if(!('IntersectionObserver' in window)){secs.forEach(function(s){s.classList.add('live')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('live',e.isIntersecting)})},{rootMargin:'8% 0px 8% 0px'});
+  secs.forEach(function(s){io.observe(s)});
 })();
 
 </script>

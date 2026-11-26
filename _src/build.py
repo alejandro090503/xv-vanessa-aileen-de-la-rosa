@@ -117,7 +117,7 @@ html = html[:a] + body(B + 'C-rsvp.html') + '\n  ' + html[z:]
 a = html.index('<audio id="bg-music"'); html = html[:a] + body(B + 'P-principal.html') + '\n' + html[a:]
 # JS: los de AUDIO_JS en script propio tras el principal; los de </body> al final
 js1 = ''.join('<script>\n' + body(B + f) + '\n</script>\n' for f in ['C-galeria.js', 'C-rsvp.js', 'P-principal.js'])
-js2 = ''.join('<script>\n' + body(B + f) + '\n</script>\n' for f in ['A-capas.js', 'A-particulas.js', 'D-vivo.js', 'D-brillo.js', 'D-itinerario.js'])
+js2 = ''.join('<script>\n' + body(B + f) + '\n</script>\n' for f in ['A-capas.js', 'A-particulas.js', 'D-vivo.js', 'D-brillo.js', 'D-itinerario.js', 'S-ligero.js'])
 i = html.rfind('</body>'); html = html[:i] + js1 + js2 + html[i:]
 html = html.replace('loading="lazy"></div>', '></div>')
 open(OUT, 'w', encoding='utf-8').write(html)

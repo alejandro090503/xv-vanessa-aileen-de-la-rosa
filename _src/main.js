@@ -6,7 +6,7 @@
   audio.addEventListener('pause',function(){setPlay(false)});audio.addEventListener('play',function(){setPlay(true)});
 
   /* ---- chispas (oro, rosa, champán) ---- */
-  var cv=document.getElementById('sparks'),cx=cv.getContext('2d'),P=[],dpr=Math.min(devicePixelRatio||1,2);
+  var cv=document.getElementById('sparks'),cx=cv.getContext('2d'),P=[],dpr=(matchMedia('(hover:none)').matches?1:Math.min(devicePixelRatio||1,2));
   function rs(){cv.width=innerWidth*dpr;cv.height=innerHeight*dpr}rs();addEventListener('resize',rs);
   var MIX=['#ffd86b','#ffa1dd','#f7e7ce','#ffffff'];
   function burst(x,y,n){for(var i=0;i<n;i++){var a=Math.random()*6.283,v=1+Math.random()*4;P.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-1.5,l:1,s:1.5+Math.random()*3,c:MIX[i%4],st:Math.random()<.4})}}

@@ -1,0 +1,8 @@
+/* ══ LIGERO · evita "A problem repeatedly occurred" en iPhone: solo anima la sección visible ══ */
+.wrap>section:not(.live) *,.wrap>section:not(.live)::before,.wrap>section:not(.live)::after{animation:none!important}
+.ink-bg img,.adorno.nit,#hero .hero-bg,#hero .hero-content{will-change:auto!important}
+.hero-glow,.hero-lens,.d-rueca-luz{mix-blend-mode:normal!important}
+.hero-lens{opacity:.55}
+@media (hover:none){.wheel-refl{display:none!important}}
+body:not(.locked) .wrap{transition:none!important;box-shadow:none!important}
+@media (hover:none){.ink-bg img{animation:none!important;transform:none!important}}
